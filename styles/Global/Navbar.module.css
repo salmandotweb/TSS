@@ -1,0 +1,53 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 3rem 5rem;
+}
+.socialLinks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.link {
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0.1rem solid var(--2e2);
+	cursor: pointer;
+	transition: 250ms all;
+}
+.link:not(:last-child) {
+	margin-right: 1rem;
+}
+.link:hover {
+	background: var(--ec4);
+	border: 0.1rem solid var(--white);
+}
+.link:hover > svg {
+	color: var(--white);
+}
+.link > svg {
+	font-size: 1.3rem;
+}
+.logo > img {
+	width: 15rem;
+}
+.right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.right > p {
+	font-weight: 700;
+	margin-right: 2rem;
+}
+.menu {
+	cursor: pointer;
+}
+.menu > svg {
+	font-size: 2.5rem;
+}
