@@ -116,16 +116,17 @@
 		padding-top: 3rem;
 	}
 }
+@media screen and (max-width: 425px) {
+	.right {
+		padding: 0;
+	}
+	.right > img {
+		border-radius: 0;
+	}
+}
 @media screen and (max-width: 399px) {
 	.left {
 		padding-left: 3rem;
 		padding-right: 3rem;
-	}
-	.right {
-		padding: 0 2rem;
-	}
-	.right > img {
-		height: 100%;
-		border-radius: 1rem;
 	}
 }
