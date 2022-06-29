@@ -1,5 +1,7 @@
 import Head from "next/head";
+import Header from "../components/Global/Header";
 import Navbar from "../components/Global/Navbar";
+import AboutSection from "../sections/HomePage/AboutSection";
 
 export default function Home() {
 	return (
@@ -10,6 +12,8 @@ export default function Home() {
 				<link rel="icon" href="/favicon.svg" />
 			</Head>
 			<Navbar />
+			<Header />
+			<AboutSection />
 		</div>
 	);
 }
