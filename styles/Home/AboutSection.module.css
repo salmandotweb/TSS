@@ -35,3 +35,5 @@
 	height: 90rem;
 	object-fit: cover;
 }
+@media screen and (max-width: 1292px) {
+}
