@@ -43,3 +43,17 @@
 	margin-right: 0;
 	margin-left: 5rem;
 }
+.viewAll {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-top: 7rem;
+	cursor: pointer;
+}
+.line {
+	width: 12rem;
+	height: 0.2rem;
+	background: var(--white);
+	margin-right: 2rem;
+}
