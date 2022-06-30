@@ -1,0 +1,19 @@
+import React from "react";
+import classes from "../../styles/Home/WorkSection.module.css";
+
+const WorkCard = ({ classname }) => {
+	return (
+		<div className={`${classes[classname]} ${classes.workCard}`}>
+			<div className={classes.imageContainer}>
+				<img src="/assets/workImage.png" alt="Work" />
+			</div>
+			<div className={classes.info}>
+				<h1>Slice Ping Pong</h1>
+				<p>A great venue for ping pong, Table Foosball and Beer Pong Games</p>
+				<button className="circleBtn">View Project</button>
+			</div>
+		</div>
+	);
+};
+
+export default WorkCard;
