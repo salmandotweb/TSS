@@ -22,13 +22,13 @@ const Header = () => {
 					in London.
 				</p>
 			</div>
-			{/* <div className={classes.arrow}>
+			<div className={classes.arrow}>
 				<div className={classes.container}>
 					<div className={classes.chevron}></div>
 					<div className={classes.chevron}></div>
 					<div className={classes.chevron}></div>
 				</div>
-			</div> */}
+			</div>
 		</section>
 	);
 };

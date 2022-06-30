@@ -1,0 +1,7 @@
+.workSection {
+	padding: 5rem 15rem;
+	width: 100%;
+	min-height: 100vh;
+	background: var(--2e2);
+	color: var(--white);
+}

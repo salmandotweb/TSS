@@ -56,6 +56,9 @@ body {
 	background: var(--white);
 	color: var(--black);
 }
+code {
+	font-family: "Josefin Sans", sans-serif;
+}
 
 /* body::-webkit-scrollbar {
 	width: 0.7rem;
@@ -99,6 +102,7 @@ a {
 	font-weight: 700;
 }
 
-code {
-	font-family: "Josefin Sans", sans-serif;
+.sectionTitle{
+	width: 100%;
+	padding: 0 ;
 }
