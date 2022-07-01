@@ -57,3 +57,74 @@
 	background: var(--white);
 	margin-right: 2rem;
 }
+@media screen and (max-width: 1286px) {
+	.info > h1 {
+		font-size: 4rem;
+	}
+	.imageContainer {
+		width: 60vw;
+	}
+}
+@media screen and (max-width: 1254px) {
+	.workSection {
+		padding: 5rem 10rem;
+	}
+}
+@media screen and (max-width: 1214px) {
+	.info > h1 {
+		font-size: 4rem;
+	}
+	.imageContainer {
+		width: 70vw;
+	}
+}
+@media screen and (max-width: 1046px) {
+	.info > h1 {
+		font-size: 4rem;
+	}
+	.imageContainer {
+		width: 70vw;
+	}
+}
+@media screen and (max-width: 1026px) {
+	.workCard {
+		flex-direction: column;
+	}
+	.imageContainer {
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 5rem;
+		width: 100%;
+	}
+	.reverse > .imageContainer {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 666px) {
+	.workSection {
+		padding: 5rem;
+	}
+}
+@media screen and (max-width: 599px) {
+	.info > h1 {
+		font-size: 3.2rem;
+	}
+	.info > p {
+		width: 100%;
+		font-size: 1.7rem;
+		margin-bottom: 3rem;
+	}
+}
+@media screen and (max-width: 425px) {
+	.workSection {
+		padding: 3rem;
+	}
+	.info {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+}
