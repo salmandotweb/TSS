@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"); */
+
+@import url("http://fonts.cdnfonts.com/css/neue-kabel");
 
 *,
 *::before,
@@ -50,13 +52,13 @@ html:focus-within {
 }
 
 body {
-	font-family: "Josefin Sans", sans-serif;
+	font-family: "Neue Kabel", sans-serif;
 	font-size: 1.6rem;
 	background: var(--white);
 	color: var(--black);
 }
 code {
-	font-family: "neue-kabel";
+	font-family: "Neue Kabel", sans-serif;
 }
 
 /* body::-webkit-scrollbar {
@@ -74,7 +76,7 @@ body::-webkit-scrollbar-thumb {
 
 h1 {
 	font-size: 5.2rem;
-	font-weight: 800;
+	font-weight: 900;
 }
 h2 {
 	font-size: 3.2rem;
@@ -82,15 +84,15 @@ h2 {
 }
 h3 {
 	font-size: 1.8rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 h4 {
 	font-size: 1.6rem;
-	font-weight: 500;
+	font-weight: 600;
 }
 h5 {
 	font-size: 1.4rem;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 a {
