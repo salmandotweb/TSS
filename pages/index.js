@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/Global/Header";
 import Navbar from "../components/Global/Navbar";
 import AboutSection from "../sections/HomePage/AboutSection";
+import ServicesSection from "../sections/HomePage/ServicesSection";
 import WorkSection from "../sections/HomePage/WorkSection";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
 			<Header />
 			<AboutSection />
 			<WorkSection />
+			<ServicesSection />
 		</div>
 	);
 }

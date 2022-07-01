@@ -5,7 +5,7 @@ import classes from "../../styles/Home/WorkSection.module.css";
 const WorkSection = () => {
 	return (
 		<section className={classes.workSection}>
-			<h1 className={classes.sectionTitle}>
+			<h1 className="sectionTitle">
 				Our <br /> Work
 			</h1>
 			<div className={classes.cardsContainer}>
