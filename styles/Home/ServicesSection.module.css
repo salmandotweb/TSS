@@ -1,3 +1,35 @@
 .servicesSection {
-	padding: 5rem 15rem;
+	padding: 5rem 15rem 5rem 0;
+}
+.title {
+	padding: 0 0 5rem 15rem;
+}
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.imageContainer {
+	width: 50vw;
+}
+.imageContainer > img {
+	width: 100%;
+}
+.services {
+	margin-left: 5rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.service:not(:last-child) {
+	margin-bottom: 7rem;
+}
+.service > h1 {
+	font-size: 5rem;
+	margin-bottom: 1rem;
+}
+.service > p {
+	font-weight: 600;
+	font-size: 1.7rem;
 }
