@@ -1,9 +1,11 @@
 import React from "react";
+import { ImQuotesLeft } from "react-icons/im";
 import classes from "../../styles/Home/ReviewsSection.module.css";
 
 const CarouselCard = () => {
 	return (
 		<div className={classes.carouselCard}>
+			<ImQuotesLeft className={classes.quote} />
 			<h2>Latoya Gabbidon</h2>
 			<p>Owner - Candy Palazzo</p>
 			<p>

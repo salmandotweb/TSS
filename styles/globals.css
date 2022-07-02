@@ -131,11 +131,28 @@ a {
 /* carousel styling */
 
 .slick-slider {
-	height: 45rem;
+	height: 42rem;
 }
 
 .slick-prev {
-	left: 0rem !important;
+	top: 100% !important;
+	left: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	z-index: 999999999 !important;
+	filter: invert(1);
+}
+
+.slick-dots {
+	display: none !important;
+}
+.slick-next {
+	top: 100% !important;
+	left: 3rem !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	z-index: 999999999 !important;
+	filter: invert(1);
 }
 
 @media screen and (max-width: 543px) {
