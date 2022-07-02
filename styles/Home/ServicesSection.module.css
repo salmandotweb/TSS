@@ -1,16 +1,17 @@
 .servicesSection {
 	padding: 5rem 15rem 5rem 0;
+	overflow-x: hidden;
 }
 .title {
 	padding: 0 0 5rem 15rem;
 }
 .info {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: flex-start;
 }
 .imageContainer {
-	width: 50vw;
+	width: 80rem;
 }
 .imageContainer > img {
 	width: 100%;
@@ -32,4 +33,96 @@
 .service > p {
 	font-weight: 600;
 	font-size: 1.7rem;
+}
+@media screen and (max-width: 1440px) {
+	.servicesSection {
+		padding: 5rem 5rem 5rem 0;
+	}
+}
+@media screen and (max-width: 1226px) {
+	.service > h1 {
+		font-size: 4rem;
+		font-weight: 800;
+	}
+	.service > p {
+		font-size: 1.5rem;
+	}
+	.imageContainer {
+		width: 60rem;
+	}
+}
+@media screen and (max-width: 1174px) {
+	.title {
+		padding: 0 3rem 3rem 0rem;
+	}
+	.info {
+		flex-direction: column;
+	}
+	.imageContainer {
+		width: 100%;
+		height: 50rem;
+		/* display: none; */
+	}
+	.imageContainer > img {
+		height: 100%;
+		object-fit: cover;
+		border-radius: 1.5rem;
+	}
+	.servicesSection {
+		padding: 3rem;
+	}
+	.services {
+		margin-top: 4rem;
+		width: 100%;
+	}
+	.service {
+		width: 100%;
+	}
+	.service > h1 {
+		font-size: 5rem;
+		margin-bottom: 1rem;
+	}
+	.service > p {
+		font-weight: 600;
+		font-size: 1.7rem;
+	}
+}
+@media screen and (max-width: 715px) {
+	.service > h1 {
+		font-size: 4rem;
+		font-weight: 800;
+	}
+	.service > p {
+		font-size: 1.5rem;
+	}
+}
+@media screen and (max-width: 562px) {
+	.imageContainer > img {
+		border-radius: 1rem;
+	}
+	.services {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 562px) {
+	.service {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 425px) {
+	.service {
+		margin-bottom: 5rem;
+	}
+}
+@media screen and (max-width: 320px) {
+	.imageContainer > img {
+		border-radius: 0.5rem;
+	}
+	.servicesSection {
+		padding: 3rem 2rem;
+	}
 }

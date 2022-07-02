@@ -113,6 +113,12 @@
 		margin-bottom: 3rem;
 	}
 }
+@media screen and (max-width: 489px) {
+	.viewAll > h2 {
+		font-size: 2.2rem;
+		font-weight: 600;
+	}
+}
 @media screen and (max-width: 425px) {
 	.workSection {
 		padding: 3rem;
@@ -123,5 +129,13 @@
 		justify-content: center;
 		flex-direction: column;
 		text-align: center;
+	}
+}
+@media screen and (max-width: 375px) {
+	.line {
+		width: 8rem;
+	}
+	.viewAll {
+		justify-content: center;
 	}
 }
