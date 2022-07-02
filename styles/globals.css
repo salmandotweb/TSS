@@ -95,6 +95,11 @@ h5 {
 	font-weight: 500;
 }
 
+p {
+	font-size: 2rem;
+	color: var(--2e2);
+}
+
 a {
 	color: var(--a8a);
 }

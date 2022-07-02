@@ -1,0 +1,21 @@
+.reviewsSection {
+	padding: 5rem 5rem 5rem 15rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.info {
+	flex: 0.5;
+	margin-right: 5rem;
+}
+.info > h1 {
+	font-size: 7rem;
+	margin-bottom: 2rem;
+}
+.info > p {
+	font-size: 2.5rem;
+	line-height: 1.7;
+}
+.carousel {
+	flex: 0.5;
+}
