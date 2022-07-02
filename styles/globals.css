@@ -127,6 +127,17 @@ a {
 	font-size: 1.6rem;
 	cursor: pointer;
 }
+
+/* carousel styling */
+
+.slick-slider {
+	height: 45rem;
+}
+
+.slick-prev {
+	left: 0rem !important;
+}
+
 @media screen and (max-width: 543px) {
 	.circleBtn {
 		height: 10rem;
