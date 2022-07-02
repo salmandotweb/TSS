@@ -56,6 +56,11 @@
 		margin-bottom: 5rem;
 	}
 }
+@media screen and (max-width: 652px) {
+	.info > h1 {
+		font-size: 5rem;
+	}
+}
 @media screen and (max-width: 616px) {
 	.info {
 		align-items: center;
@@ -64,5 +69,44 @@
 	}
 	.reviewsSection {
 		padding: 3rem;
+	}
+}
+@media screen and (max-width: 509px) {
+	.carouselCard > p {
+		line-height: 1.6;
+		font-size: 2rem;
+	}
+	.carousel {
+		padding: 4rem;
+	}
+}
+@media screen and (max-width: 425px) {
+	.info > h1 {
+		font-size: 4rem;
+	}
+	.info > p {
+		font-size: 2rem;
+		line-height: 1.4;
+	}
+	.carouselCard {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.carouselCard > p {
+		line-height: 1.6;
+		font-size: 1.8rem;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 387px) {
+	.carousel {
+		padding: 2rem 2rem 4rem 2rem;
+	}
+}
+@media screen and (max-width: 320px) {
+	.carouselCard > p {
+		line-height: 1.3;
+		font-size: 1.6rem;
 	}
 }

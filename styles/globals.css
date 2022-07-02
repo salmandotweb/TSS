@@ -130,7 +130,7 @@ a {
 /* carousel styling */
 
 .slick-slider {
-	height: 42rem;
+	min-height: 42rem;
 }
 
 .slick-prev {
@@ -167,7 +167,22 @@ a {
 
 @media screen and (max-width: 1252px) {
 	.slick-slider {
-		height: 45rem;
+		/* height: 45rem; */
+	}
+}
+
+@media screen and (max-width: 652px) {
+	.sectionTitle {
+		font-size: 5rem;
+	}
+}
+
+@media screen and (max-width: 589px) {
+	.slick-slider {
+		/* height: 50rem; */
+	}
+	.slick-prev {
+		left: 90% !important;
 	}
 }
 
@@ -176,5 +191,27 @@ a {
 		height: 10rem;
 		width: 10rem;
 		font-size: 1.5rem;
+	}
+}
+@media screen and (max-width: 425px) {
+	.sectionTitle {
+		font-size: 4rem;
+	}
+	.slick-prev::before,
+	.slick-next::before {
+		font-size: 2.5rem !important;
+	}
+	.slick-prev {
+		left: 88% !important;
+	}
+}
+@media screen and (max-width: 387px) {
+	.slick-prev {
+		left: 40% !important;
+		margin-top: 3rem;
+	}
+	.slick-next {
+		left: 60% !important;
+		margin-top: 3rem;
 	}
 }
