@@ -32,6 +32,7 @@
 .carouselCard > p {
 	line-height: 1.7;
 	font-size: 2.1rem;
+	color: var(--2e2);
 }
 .carouselCard > p:not(:last-child) {
 	margin-bottom: 3rem;
@@ -39,4 +40,29 @@
 .quote {
 	font-size: 3rem;
 	margin-bottom: 1rem;
+}
+@media screen and (max-width: 1252px) {
+	.info > h1 {
+		font-size: 6rem;
+	}
+}
+@media screen and (max-width: 1168px) {
+	.reviewsSection {
+		padding: 5rem 5rem 5rem 5rem;
+		flex-direction: column;
+	}
+	.info {
+		margin-right: 0;
+		margin-bottom: 5rem;
+	}
+}
+@media screen and (max-width: 616px) {
+	.info {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.reviewsSection {
+		padding: 3rem;
+	}
 }
