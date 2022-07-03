@@ -1,0 +1,120 @@
+.blogSection {
+	padding: 5rem 0rem 5rem 15rem;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 15rem;
+}
+.header > button {
+	color: var(--2e2);
+	border: 0.1rem solid var(--2e2);
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 5rem;
+}
+.blogCard {
+	width: 45vw;
+	cursor: pointer;
+	position: relative;
+}
+.blogCard:not(:last-child) {
+	margin-right: 5rem;
+}
+.imageContainer {
+	width: 100%;
+}
+.imageContainer > img {
+	width: 100%;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.details {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0.5rem;
+}
+.details > div {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-right: 4rem;
+}
+.details > div > p {
+	margin-left: 1rem;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+.details p {
+	font-size: 1.6rem;
+}
+.blogBtn {
+	height: 10rem;
+	width: 10rem;
+}
+@media screen and (max-width: 1168px) {
+	.blogSection {
+		padding: 5rem 0rem 5rem 5rem;
+	}
+}
+@media screen and (max-width: 948px) {
+	.container {
+		flex-direction: column;
+	}
+	.blogCard {
+		width: 100%;
+	}
+	.blogCard:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 5rem;
+	}
+	.blogSection {
+		padding: 5rem;
+	}
+}
+@media screen and (max-width: 858px) {
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-right: 0;
+	}
+}
+@media screen and (max-width: 560px) {
+	.details {
+		flex-direction: column;
+	}
+	.details > p {
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (max-width: 508px) {
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.blogBtn {
+		margin-top: 2rem;
+	}
+}
+@media screen and (max-width: 425px) {
+	.blogSection {
+		padding: 3rem;
+	}
+	.header {
+		align-items: center;
+	}
+	.container {
+		padding-top: 3rem;
+	}
+}

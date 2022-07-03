@@ -9,7 +9,6 @@
 	margin-right: 5rem;
 }
 .info > h1 {
-	font-size: 7rem;
 	margin-bottom: 2rem;
 }
 .info > p {
@@ -41,11 +40,11 @@
 	font-size: 3rem;
 	margin-bottom: 1rem;
 }
-@media screen and (max-width: 1252px) {
+/* @media screen and (max-width: 1252px) {
 	.info > h1 {
 		font-size: 6rem;
 	}
-}
+} */
 @media screen and (max-width: 1168px) {
 	.reviewsSection {
 		padding: 5rem 5rem 5rem 5rem;

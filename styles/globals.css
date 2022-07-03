@@ -165,11 +165,11 @@ a {
 	}
 }
 
-@media screen and (max-width: 1252px) {
+/* @media screen and (max-width: 1252px) {
 	.slick-slider {
-		/* height: 45rem; */
+		height: 45rem;
 	}
-}
+} */
 
 @media screen and (max-width: 652px) {
 	.sectionTitle {
@@ -178,9 +178,9 @@ a {
 }
 
 @media screen and (max-width: 589px) {
-	.slick-slider {
-		/* height: 50rem; */
-	}
+	/* .slick-slider {
+		height: 50rem;
+	} */
 	.slick-prev {
 		left: 90% !important;
 	}
@@ -203,6 +203,10 @@ a {
 	}
 	.slick-prev {
 		left: 88% !important;
+	}
+	.sectionTitle {
+		text-align: center;
+		padding: 0 0 3rem 0 !important;
 	}
 }
 @media screen and (max-width: 387px) {

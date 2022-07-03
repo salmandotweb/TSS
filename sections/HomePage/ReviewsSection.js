@@ -16,7 +16,7 @@ const ReviewsSection = () => {
 	return (
 		<section className={classes.reviewsSection}>
 			<div className={classes.info}>
-				<h1>
+				<h1 className="sectionTitle">
 					Our Consistent <br /> 5 Star Reviews
 				</h1>
 				<p>
