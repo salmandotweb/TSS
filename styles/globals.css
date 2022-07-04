@@ -127,6 +127,20 @@ a {
 	cursor: pointer;
 }
 
+input {
+	border: none;
+	background: none;
+	color: var(--white);
+	border-bottom: 0.1rem solid var(--white);
+	width: 100%;
+	font-family: inherit;
+	font-size: 1.6rem;
+	padding: 0.5rem 0 1.5rem 0;
+}
+input::placeholder {
+	color: var(--white);
+}
+
 /* carousel styling */
 
 .slick-slider {

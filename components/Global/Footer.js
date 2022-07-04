@@ -6,6 +6,7 @@ import {
 } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
+import { IoChevronForwardCircle } from "react-icons/io5";
 import classes from "../../styles/Global/Footer.module.css";
 
 const Footer = () => {
@@ -33,6 +34,15 @@ const Footer = () => {
 				</div>
 				<div className={classes.middle}>
 					<h2>Book A Free Consultation</h2>
+					<form className={classes.form}>
+						<input type="text" placeholder="Name" />
+						<input type="text" placeholder="Email" />
+						<input type="text" placeholder="Contact Number" />
+						<input type="text" placeholder="Business Name" />
+						<a href="/" className={classes.submitBtn}>
+							Submit <IoChevronForwardCircle />
+						</a>
+					</form>
 				</div>
 				<div className={classes.right}>
 					<h2>Quick link</h2>
