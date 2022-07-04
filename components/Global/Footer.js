@@ -4,6 +4,7 @@ import {
 	AiOutlinePhone,
 	AiOutlineTwitter,
 } from "react-icons/ai";
+import { Link } from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import { IoChevronForwardCircle } from "react-icons/io5";
@@ -39,9 +40,9 @@ const Footer = () => {
 						<input type="text" placeholder="Email" />
 						<input type="text" placeholder="Contact Number" />
 						<input type="text" placeholder="Business Name" />
-						<a href="/" className={classes.submitBtn}>
+						<Link href="/" className={classes.submitBtn}>
 							Submit <IoChevronForwardCircle />
-						</a>
+						</Link>
 					</form>
 				</div>
 				<div className={classes.right}>
