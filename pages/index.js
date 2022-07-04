@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Global/Footer";
 import Header from "../components/Global/Header";
 import Navbar from "../components/Global/Navbar";
 import AboutSection from "../sections/HomePage/AboutSection";
@@ -22,6 +23,7 @@ export default function Home() {
 			<ServicesSection />
 			<ReviewsSection />
 			<BlogsSection />
+			<Footer />
 		</div>
 	);
 }

@@ -1,0 +1,17 @@
+.footer {
+	background: var(--2e2);
+	color: var(--white);
+	padding: 5rem 15rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.footer p {
+	color: #787878;
+}
+.left {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+}
