@@ -113,13 +113,48 @@
 
 .linksContainer {
 	padding: 5rem 15rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.links {
+	flex: 0.5;
 }
 .links > h1 {
 	font-size: 10rem;
 	font-weight: 500;
 	transition: 150ms all;
 	cursor: pointer;
+	width: fit-content;
 }
 .links > h1:hover {
-	font-weight: 800;
+	font-weight: 800 !important;
+}
+.subLinksContainer {
+	flex: 0.5;
+}
+.subLinks {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.subLinks > p {
+	font-size: 2rem;
+	font-weight: 300;
+	cursor: pointer;
+	transition: 200ms all;
+}
+.subLinks > p:hover {
+	transform: scale(1.2);
+	color: var(--ec4);
+}
+.subLinks > p:not(:last-child) {
+	margin-bottom: 2rem;
+}
+.bold {
+	font-weight: 800 !important;
+}
+.normal {
+	font-weight: 500 !important;
 }
