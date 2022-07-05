@@ -32,7 +32,7 @@ const Navbar = () => {
 		setShow(!show);
 	};
 	const handleHome = () => {
-		setHome(true);
+		setHome(!home);
 		setBlogs(false);
 		setAbout(false);
 		setContact(false);
@@ -43,19 +43,19 @@ const Navbar = () => {
 		setBlogs(false);
 		setAbout(false);
 		setContact(false);
-		setServices(true);
+		setServices(!services);
 	};
 	const handleBlogs = () => {
 		setHome(false);
 		setServices(false);
 		setAbout(false);
 		setContact(false);
-		setBlogs(true);
+		setBlogs(!blogs);
 	};
 	const handleAbout = () => {
 		setHome(false);
 		setServices(false);
-		setAbout(true);
+		setAbout(!about);
 		setContact(false);
 		setBlogs(false);
 	};
@@ -63,7 +63,7 @@ const Navbar = () => {
 		setHome(false);
 		setServices(false);
 		setAbout(false);
-		setContact(true);
+		setContact(!contact);
 		setBlogs(false);
 	};
 	return (
@@ -147,6 +147,18 @@ const Navbar = () => {
 								className={services ? classes.bold : classes.normal}>
 								Services
 							</h1>
+							<div className={classes.mobileLinksContainer}>
+								{services && (
+									<SubLinks
+										link1="Web Design"
+										link2="Branding and UI/UX Design"
+										link3="Digital Marketing"
+										link4="Content Creation"
+										link5="Mobile Application Development"
+										link6="Web Application Development"
+									/>
+								)}
+							</div>
 							<h1
 								onClick={handleBlogs}
 								className={blogs ? classes.bold : classes.normal}>
@@ -164,20 +176,16 @@ const Navbar = () => {
 							</h1>
 						</div>
 						<div className={classes.subLinksContainer}>
-							{(home && <SubLinks link1="Home" />) ||
-								(services && (
-									<SubLinks
-										link1="Web Design"
-										link2="Branding and UI/UX Design"
-										link3="Digital Marketing"
-										link4="Content Creation"
-										link5="Mobile Application Development"
-										link6="Web Application Development"
-									/>
-								)) ||
-								(blogs && <SubLinks link1="Blogs" />) ||
-								(about && <SubLinks link1="About Us" />) ||
-								(contact && <SubLinks link1="Contact Us" />)}
+							{services && (
+								<SubLinks
+									link1="Web Design"
+									link2="Branding and UI/UX Design"
+									link3="Digital Marketing"
+									link4="Content Creation"
+									link5="Mobile Application Development"
+									link6="Web Application Development"
+								/>
+							)}
 						</div>
 					</div>
 					<div className={classes.contactInfo}>

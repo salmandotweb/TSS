@@ -133,6 +133,9 @@
 .subLinksContainer {
 	flex: 0.5;
 }
+.mobileLinksContainer {
+	display: none;
+}
 .subLinks {
 	display: flex;
 	flex-direction: column;
@@ -301,6 +304,84 @@
 }
 @media screen and (max-width: 968px) {
 	.linksContainer {
-		padding: 5rem 5rem;
+		padding: 5rem;
+	}
+}
+@media screen and (max-width: 866px) {
+	.subLinksContainer {
+		display: none;
+	}
+	.mobileLinksContainer {
+		display: block;
+	}
+	.links > h1:not(:last-child) {
+		padding-bottom: 2rem;
+	}
+	.menuWrapper {
+		overflow-y: scroll;
+		overflow-x: hidden;
+		background-image: linear-gradient(to bottom, #4998c3, #ec4d37);
+	}
+	.blobs > svg:first-child {
+		display: none;
+	}
+	.blobs > svg:last-child {
+		display: none;
+	}
+	.overlay {
+		display: none;
+	}
+	.contactInfo {
+		margin-top: 4rem;
+		margin-right: 3rem;
+		padding-bottom: 2rem;
+	}
+	.contactInfo > p {
+		font-weight: 400;
+		font-size: 1.4rem;
+		color: var(--white);
+	}
+	.line {
+		background: var(--white);
+	}
+}
+@media screen and (max-width: 642px) {
+	.contactInfo {
+		display: none;
+	}
+	.links > h1 {
+		font-size: 7rem;
+	}
+}
+@media screen and (max-width: 542px) {
+	.links > h1 {
+		font-size: 6rem;
+	}
+}
+@media screen and (max-width: 446px) {
+	.links > h1 {
+		font-size: 5rem;
+	}
+	.subLinks > p {
+		font-size: 1.8rem;
+		font-weight: 400;
+	}
+	.subLinks > p:last-child {
+		margin-bottom: 2rem;
+	}
+}
+@media screen and (max-width: 425px) {
+	.linksContainer {
+		padding: 2rem;
+	}
+}
+@media screen and (max-width: 356px) {
+	.subLinks > p {
+		font-size: 1.6rem;
+	}
+}
+@media screen and (max-width: 337px) {
+	.links > h1 {
+		font-size: 4rem;
 	}
 }
