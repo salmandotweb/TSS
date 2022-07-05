@@ -93,6 +93,23 @@ const Navbar = () => {
 			</div>
 			{show && (
 				<div className={classes.menuWrapper}>
+					<div className={classes.overlay}></div>
+					<div className={classes.blobs}>
+						<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+							<path
+								fill="#4998C3"
+								d="M56,-67C71.9,-53.4,83.7,-35.1,87,-15.5C90.3,4.2,85.1,25.2,74.8,43.3C64.5,61.4,49,76.7,30.3,83.8C11.6,90.8,-10.3,89.6,-29.8,82.4C-49.4,75.1,-66.5,61.7,-77,44.2C-87.5,26.6,-91.3,4.9,-86.9,-14.6C-82.6,-34.1,-70.1,-51.4,-54.3,-65C-38.4,-78.6,-19.2,-88.5,0.4,-89C20,-89.5,40.1,-80.5,56,-67Z"
+								transform="translate(100 100)"
+							/>
+						</svg>
+						<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+							<path
+								fill="#EC4D37"
+								d="M56,-67C71.9,-53.4,83.7,-35.1,87,-15.5C90.3,4.2,85.1,25.2,74.8,43.3C64.5,61.4,49,76.7,30.3,83.8C11.6,90.8,-10.3,89.6,-29.8,82.4C-49.4,75.1,-66.5,61.7,-77,44.2C-87.5,26.6,-91.3,4.9,-86.9,-14.6C-82.6,-34.1,-70.1,-51.4,-54.3,-65C-38.4,-78.6,-19.2,-88.5,0.4,-89C20,-89.5,40.1,-80.5,56,-67Z"
+								transform="translate(100 100)"
+							/>
+						</svg>
+					</div>
 					<nav className={classes.navbar}>
 						<div className={classes.socialLinks}>
 							<div className={`${classes.link} ${classes.mobileLink}`}>
@@ -148,7 +165,16 @@ const Navbar = () => {
 						</div>
 						<div className={classes.subLinksContainer}>
 							{(home && <SubLinks link1="Home" />) ||
-								(services && <SubLinks link1="Services" />) ||
+								(services && (
+									<SubLinks
+										link1="Web Design"
+										link2="Branding and UI/UX Design"
+										link3="Digital Marketing"
+										link4="Content Creation"
+										link5="Mobile Application Development"
+										link6="Web Application Development"
+									/>
+								)) ||
 								(blogs && <SubLinks link1="Blogs" />) ||
 								(about && <SubLinks link1="About Us" />) ||
 								(contact && <SubLinks link1="Contact Us" />)}
