@@ -52,13 +52,13 @@ html:focus-within {
 }
 
 body {
-	font-family: "Neue Kabel", sans-serif;
+	font-family: "Neue Kabel";
 	font-size: 1.6rem;
 	background: var(--white);
 	color: var(--2e2);
 }
 code {
-	font-family: "Neue Kabel", sans-serif;
+	font-family: "Neue Kabel";
 }
 
 /* body::-webkit-scrollbar {
