@@ -29,7 +29,7 @@ const Footer = () => {
 					</p>
 					<p className={classes.call}>
 						<AiOutlinePhone />
-						Let's Start
+						{`Let's`} Start
 					</p>
 				</div>
 				<div className={classes.middle}>
