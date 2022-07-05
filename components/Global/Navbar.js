@@ -180,6 +180,11 @@ const Navbar = () => {
 								(contact && <SubLinks link1="Contact Us" />)}
 						</div>
 					</div>
+					<div className={classes.contactInfo}>
+						<p>{`Let's`} create something magical</p>
+						<div className={classes.line}></div>
+						<p>0203 876 6726</p>
+					</div>
 				</div>
 			)}
 		</nav>
