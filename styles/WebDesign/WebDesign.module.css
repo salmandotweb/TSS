@@ -127,3 +127,134 @@
 		font-size: 3.2rem;
 	}
 }
+
+/* varieties Section */
+.varietiesSection {
+	padding: 0rem 20rem 10rem 20rem;
+}
+.variety {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 5rem;
+	background: var(--white);
+	color: var(--2e2);
+	transition: 400ms all;
+	border-bottom: 0.1rem solid var(--2e2);
+}
+.variety:hover {
+	padding: 10rem;
+	background: var(--2e2);
+	color: var(--white);
+}
+.variety:hover .left > p {
+	color: var(--ccc);
+}
+.variety:hover .icon > svg {
+	display: block;
+}
+.left {
+	flex: 0.8;
+}
+.left > h1 {
+	margin-bottom: 2rem;
+}
+.left > p {
+	font-weight: 300;
+	color: var(--white);
+	width: 90%;
+}
+.icon {
+	flex: 0.2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon > svg {
+	font-size: 10rem;
+	display: none;
+}
+@media screen and (max-width: 1294px) {
+	.varietiesSection {
+		padding: 0rem 15rem 10rem 15rem;
+	}
+}
+@media screen and (max-width: 1186px) {
+	.varietiesSection {
+		padding: 0rem 10rem 10rem 10rem;
+	}
+}
+@media screen and (max-width: 1084px) {
+	.variety:hover {
+		padding: 7rem;
+	}
+}
+@media screen and (max-width: 956px) {
+	.variety {
+		padding: 3rem;
+	}
+	.variety:hover {
+		padding: 5rem;
+	}
+	.left > h1 {
+		font-size: 4rem;
+	}
+	.left > p {
+		width: 95%;
+	}
+}
+@media screen and (max-width: 894px) {
+	.varietiesSection {
+		padding: 0rem 5rem 10rem 5rem;
+	}
+}
+@media screen and (max-width: 754px) {
+	.variety {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.left {
+		flex: 1;
+	}
+	.left > p {
+		width: 100%;
+	}
+	.icon {
+		flex: 1;
+	}
+	.icon > svg {
+		margin-top: 2rem;
+		font-size: 8rem;
+	}
+}
+@media screen and (max-width: 592px) {
+	.left > h1 {
+		font-size: 3.5rem;
+		font-weight: 700;
+	}
+	.left > p {
+		font-size: 1.8rem;
+	}
+}
+@media screen and (max-width: 510px) {
+	.variety:hover {
+		padding: 3rem 2rem;
+	}
+}
+@media screen and (max-width: 425px) {
+	.varietiesSection {
+		padding: 0;
+	}
+}
+@media screen and (max-width: 375px) {
+	.variety {
+		padding: 2rem;
+	}
+	.left > h1 {
+		font-size: 3rem;
+		font-weight: 700;
+	}
+}

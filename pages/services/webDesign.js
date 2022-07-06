@@ -6,7 +6,7 @@ import Navbar from "../../components/Global/Navbar";
 import ReviewsSection from "../../sections/HomePage/ReviewsSection";
 import WorkSection from "../../sections/HomePage/WorkSection";
 import TypesSection from "../../sections/WebDesign/TypesSection";
-import classes from "../../styles/WebDesign/WebDesign.module.css";
+import VarietiesSection from "../../sections/WebDesign/VarietiesSection";
 
 const webDesign = () => {
 	return (
@@ -26,6 +26,7 @@ const webDesign = () => {
 				description="A team of creative web designers in London who offers best web design, honest advice and a great work portfolio."
 			/>
 			<TypesSection />
+			<VarietiesSection />
 			<WorkSection />
 			<ReviewsSection />
 			<Footer />
