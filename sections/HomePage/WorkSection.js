@@ -9,10 +9,10 @@ const WorkSection = () => {
 				Our <br /> Work
 			</h1>
 			<div className={classes.cardsContainer}>
-				<WorkCard img="assets/workImage.png" />
-				<WorkCard classname="reverse" img="assets/workImage2.png" />
-				<WorkCard img="assets/workImage3.png" />
-				<WorkCard classname="reverse" img="assets/workImage.png" />
+				<WorkCard img="/assets/workImage.png" />
+				<WorkCard classname="reverse" img="/assets/workImage2.png" />
+				<WorkCard img="/assets/workImage3.png" />
+				<WorkCard classname="reverse" img="/assets/workImage.png" />
 			</div>
 			<div className={classes.viewAll}>
 				<div className={classes.line}></div>

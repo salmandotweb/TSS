@@ -1,7 +1,12 @@
 import Head from "next/head";
 import React from "react";
+import Footer from "../../components/Global/Footer";
 import Header from "../../components/Global/Header";
 import Navbar from "../../components/Global/Navbar";
+import ReviewsSection from "../../sections/HomePage/ReviewsSection";
+import WorkSection from "../../sections/HomePage/WorkSection";
+import TypesSection from "../../sections/WebDesign/TypesSection";
+import classes from "../../styles/WebDesign/WebDesign.module.css";
 
 const webDesign = () => {
 	return (
@@ -20,6 +25,10 @@ const webDesign = () => {
 				bgText2="Website"
 				description="A team of creative web designers in London who offers best web design, honest advice and a great work portfolio."
 			/>
+			<TypesSection />
+			<WorkSection />
+			<ReviewsSection />
+			<Footer />
 		</div>
 	);
 };
