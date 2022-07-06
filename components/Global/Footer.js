@@ -14,7 +14,7 @@ const Footer = () => {
 		<footer className={classes.footer}>
 			<div className={classes.container}>
 				<div className={classes.left}>
-					<img src="assets/footerLogo.svg" alt="" />
+					<img src="/assets/footerLogo.svg" alt="" />
 					<p className={classes.number}>0203 876 6726</p>
 					<p>enquiries@thesitespace.com</p>
 					<div className={classes.socialIcons}>

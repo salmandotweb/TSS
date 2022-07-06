@@ -8,10 +8,13 @@ import { FiLinkedin } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import classes from "../../styles/Global/Navbar.module.css";
+import Link from "next/link";
 
 const SubLinks = ({ link1, link2, link3, link4, link5, link6 }) => (
 	<div className={classes.subLinks}>
-		<p>{link1}</p>
+		<Link href="/services/webDesign">
+			<p>{link1}</p>
+		</Link>
 		<p>{link2}</p>
 		<p>{link3}</p>
 		<p>{link4}</p>
@@ -37,6 +40,7 @@ const Navbar = () => {
 		setAbout(false);
 		setContact(false);
 		setServices(false);
+		setShow(false);
 	};
 	const handleServices = () => {
 		setHome(false);
@@ -51,6 +55,7 @@ const Navbar = () => {
 		setAbout(false);
 		setContact(false);
 		setBlogs(!blogs);
+		setShow(false);
 	};
 	const handleAbout = () => {
 		setHome(false);
@@ -58,6 +63,7 @@ const Navbar = () => {
 		setAbout(!about);
 		setContact(false);
 		setBlogs(false);
+		setShow(false);
 	};
 	const handleContact = () => {
 		setHome(false);
@@ -65,6 +71,7 @@ const Navbar = () => {
 		setAbout(false);
 		setContact(!contact);
 		setBlogs(false);
+		setShow(false);
 	};
 	return (
 		<nav className={classes.navbar}>
@@ -83,7 +90,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div className={classes.logo}>
-				<img src="assets/logo.svg" alt="logo" />
+				<img src="/assets/logo.svg" alt="logo" />
 			</div>
 			<div className={classes.right}>
 				<p>0203 876 6726</p>
@@ -126,7 +133,7 @@ const Navbar = () => {
 							</div>
 						</div>
 						<div className={classes.logo}>
-							<img src="assets/footerLogo.svg" alt="logo" />
+							<img src="/assets/footerLogo.svg" alt="logo" />
 						</div>
 						<div className={classes.right}>
 							<p>0203 876 6726</p>
@@ -137,11 +144,13 @@ const Navbar = () => {
 					</nav>
 					<div className={classes.linksContainer}>
 						<div className={classes.links}>
-							<h1
-								onClick={handleHome}
-								className={home ? classes.bold : classes.normal}>
-								Home
-							</h1>
+							<Link href="/">
+								<h1
+									onClick={handleHome}
+									className={home ? classes.bold : classes.normal}>
+									Home
+								</h1>
+							</Link>
 							<h1
 								onClick={handleServices}
 								className={services ? classes.bold : classes.normal}>

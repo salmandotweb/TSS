@@ -17,7 +17,17 @@ export default function Home() {
 				<link rel="icon" href="/favicon.svg" />
 			</Head>
 			<Navbar />
-			<Header />
+			<Header
+				text1="Creative"
+				gradient1="Web Design &"
+				gradient2="Digital"
+				text2="Agency London."
+				bgText1="The Site"
+				bgText2="Space"
+				description="Web Buds is a creative website design agency in London."
+				bold="A team of talented web designers in London."
+				space="&nbsp;"
+			/>
 			<AboutSection />
 			<WorkSection />
 			<ServicesSection />

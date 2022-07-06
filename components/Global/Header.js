@@ -1,25 +1,37 @@
 import React from "react";
 import classes from "../../styles/Global/Header.module.css";
 
-const Header = () => {
+const Header = ({
+	bgText1,
+	bgText2,
+	text1,
+	text2,
+	gradient1,
+	gradient2,
+	description,
+	bold,
+	space,
+}) => {
 	return (
 		<section className={classes.header}>
 			<div className={classes.background_text}>
-				<span>The Site</span>
-				<span>Space</span>
+				<span>{bgText1}</span>
+				<span>{bgText2}</span>
 			</div>
 			<div className={classes.content}>
 				<h1>
-					Creative&nbsp;
+					{text1}&nbsp;
 					<span className={classes.gradient}>
-						Web Design & <br /> Digital&nbsp;
+						{gradient1}
+						<br />
+						{gradient2}
 					</span>
-					Agency London.
+					{space}
+					{text2}
 				</h1>
 				<p>
-					Web Buds is a creative website design agency in London. A&nbsp;
-					<span className="bold">team of talented web designers&nbsp;</span>
-					in London.
+					{description}&nbsp;
+					<span className="bold">{bold}&nbsp;</span>
 				</p>
 			</div>
 			<div className={classes.arrow}>
