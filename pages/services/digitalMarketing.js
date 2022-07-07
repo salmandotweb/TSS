@@ -3,11 +3,17 @@ import Head from "next/head";
 import Header from "../../components/Global/Header";
 import Navbar from "../../components/Global/Navbar";
 import classes from "../../styles/WebDesign/WebDesign.module.css";
+import classes2 from "../../styles/DigitalMarketing/DigitalMarketing.module.css";
 import Type from "../../components/WebDesign/Type";
 import Content from "../../components/WebDesign/Content";
-import { RiBookletLine } from "react-icons/ri";
 import Variety from "../../components/WebDesign/Variety";
-import { BsLaptop } from "react-icons/bs";
+import { GiMagnifyingGlass, GiTargetShot } from "react-icons/gi";
+import ReviewsSection from "../../sections/HomePage/ReviewsSection";
+import Footer from "../../components/Global/Footer";
+import { FiRefreshCcw } from "react-icons/fi";
+import { FaLocationArrow, FaTv } from "react-icons/fa";
+import { ImMap2 } from "react-icons/im";
+import { AiOutlineMobile } from "react-icons/ai";
 
 const digitalMarketing = () => {
 	return (
@@ -28,11 +34,20 @@ const digitalMarketing = () => {
 			/>
 			<section className={classes.typesSection}>
 				<div className={classes.types}>
-					<Type icon={<RiBookletLine />} name="Project" />
-					<Type icon={<RiBookletLine />} name="Prototyping" />
-					<Type icon={<RiBookletLine />} name="Development" />
-					<Type icon={<RiBookletLine />} name="Testing" />
-					<Type icon={<RiBookletLine />} name="Delivery" />
+					<Type
+						icon={<GiMagnifyingGlass />}
+						name="Technical SEO & Website Analysis"
+					/>
+					<Type icon={<FiRefreshCcw />} name="Keywords & Competitor Analysis" />
+					<Type
+						icon={<GiTargetShot />}
+						name="On-Page SEO & Metas Integration"
+					/>
+					<Type
+						icon={<FaLocationArrow />}
+						name="Off-Page SEO & Google Submission"
+					/>
+					<Type icon={<ImMap2 />} name="Monthly Reporting" />
 				</div>
 				<Content
 					title="SEO Service for everyone."
@@ -42,13 +57,44 @@ const digitalMarketing = () => {
 			<section className={classes.varietiesSection}>
 				<Variety
 					title="Technical SEO"
-					icon={<BsLaptop />}
+					icon={<GiMagnifyingGlass />}
 					description="	A simple website to showcase your services or tell your clients what
 					you do. A brochure website will be best for you."
 				/>
-				<Variety title="On-Page SEO" icon={<BsLaptop />} />
-				<Variety title="Off-Page SEO" icon={<BsLaptop />} />
+				<Variety
+					title="On-Page SEO"
+					icon={<GiMagnifyingGlass />}
+					description="	A simple website to showcase your services or tell your clients what
+					you do. A brochure website will be best for you."
+				/>
+				<Variety
+					title="Off-Page SEO"
+					icon={<GiMagnifyingGlass />}
+					description="	A simple website to showcase your services or tell your clients what
+					you do. A brochure website will be best for you."
+				/>
 			</section>
+			<section className={classes2.workSection}>
+				<h1>What we do for you?</h1>
+				<p>
+					SEO is not straightforward and not an easy process. It's takes time to
+					rank a website on top of Google searches. We use agile SEO techniques
+					to rank websites and what we do is amazing. SEO need regular work to
+					stay on top of your competition, and every website needs a digital
+					marketing strategy; otherwise, it will fall behind and not generate
+					any business. We use industry-leading tools for reporting and daily
+					optimization. Our specialists monitor the campaign's performance every
+					day and make changes to the strategy wherever required.
+				</p>
+				<div className={classes2.workTypes}>
+					<Type icon={<GiMagnifyingGlass />} name="SEO" />
+					<Type icon={<AiOutlineMobile />} name="Social Media Marketing" />
+					<Type icon={<FaLocationArrow />} name="Local SEO" />
+					<Type icon={<FaTv />} name="PPC Google Ads" />
+				</div>
+			</section>
+			<ReviewsSection />
+			<Footer />
 		</div>
 	);
 };
