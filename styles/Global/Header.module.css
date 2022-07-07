@@ -271,6 +271,7 @@
 	.content > p {
 		font-size: 1.7rem;
 		width: 90vw;
+		font-weight: 500;
 	}
 }
 @media screen and (max-width: 350px) {
@@ -282,6 +283,7 @@
 	}
 	.content > p {
 		width: 90vw;
+		font-weight: 500;
 	}
 }
 @media screen and (max-width: 320px) {
