@@ -218,7 +218,7 @@
 		font-size: 40vw;
 	}
 	.content {
-		padding: 0 3rem;
+		padding: 0 1rem;
 	}
 	.header {
 		min-height: 80vh;
@@ -233,7 +233,7 @@
 	}
 	.content > p {
 		font-size: 1.8rem;
-		width: 80vw;
+		width: 90vw;
 	}
 	.background_text {
 		font-size: 45vw;
@@ -242,7 +242,7 @@
 @media screen and (max-width: 590px) {
 	.content > p {
 		font-size: 1.6rem;
-		width: 80vw;
+		width: 90vw;
 	}
 }
 @media screen and (max-width: 482px) {
@@ -269,19 +269,16 @@
 	}
 	.content > p {
 		font-size: 1.7rem;
-		width: 90vw;
+		width: 95vw;
 		font-weight: 400;
 	}
 }
 @media screen and (max-width: 350px) {
 	.content {
-		padding: 0 2rem;
+		padding: 0 1rem;
 	}
 	.content > h1 {
 		font-size: 4rem;
-	}
-	.content > p {
-		width: 90vw;
 	}
 }
 @media screen and (max-width: 320px) {
