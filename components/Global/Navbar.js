@@ -15,7 +15,9 @@ const SubLinks = ({ link1, link2, link3, link4, link5, link6 }) => (
 		<Link href="/services/webDesign">
 			<p>{link1}</p>
 		</Link>
-		<p>{link2}</p>
+		<Link href="/services/digitalMarketing">
+			<p>{link2}</p>
+		</Link>
 		<p>{link3}</p>
 		<p>{link4}</p>
 		<p>{link5}</p>
@@ -160,8 +162,8 @@ const Navbar = () => {
 								{services && (
 									<SubLinks
 										link1="Web Design"
-										link2="Branding and UI/UX Design"
-										link3="Digital Marketing"
+										link2="Digital Marketing"
+										link3="Branding and UI/UX Design"
 										link4="Content Creation"
 										link5="Mobile Application Development"
 										link6="Web Application Development"
@@ -188,8 +190,8 @@ const Navbar = () => {
 							{services && (
 								<SubLinks
 									link1="Web Design"
-									link2="Branding and UI/UX Design"
-									link3="Digital Marketing"
+									link2="Digital Marketing"
+									link3="Branding and UI/UX Design"
 									link4="Content Creation"
 									link5="Mobile Application Development"
 									link6="Web Application Development"
