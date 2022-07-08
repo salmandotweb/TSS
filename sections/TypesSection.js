@@ -3,9 +3,9 @@ import { RiBookletLine, RiFolderSettingsLine } from "react-icons/ri";
 import { BsLaptop } from "react-icons/bs";
 import { BsBox } from "react-icons/bs";
 import { AiOutlineMobile } from "react-icons/ai";
-import classes from "../../styles/WebDesign/WebDesign.module.css";
-import Type from "../../components/WebDesign/Type";
-import Content from "../../components/WebDesign/Content";
+import classes from "../styles/WebDesign.module.css";
+import Type from "../components/Type";
+import Content from "../components/Content";
 
 const TypesSection = () => {
 	return (

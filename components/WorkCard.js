@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../styles/Home/WorkSection.module.css";
+import classes from "../styles/WorkSection.module.css";
 
 const WorkCard = ({ classname, img }) => {
 	return (

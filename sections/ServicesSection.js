@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../styles/Home/ServicesSection.module.css";
+import classes from "../styles/ServicesSection.module.css";
 
 const Service = ({ title, subTitle }) => (
 	<div className={classes.service}>

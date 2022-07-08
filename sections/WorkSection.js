@@ -1,6 +1,6 @@
 import React from "react";
-import WorkCard from "../../components/Home/WorkCard";
-import classes from "../../styles/Home/WorkSection.module.css";
+import WorkCard from "../components/WorkCard";
+import classes from "../styles/WorkSection.module.css";
 
 const WorkSection = () => {
 	return (

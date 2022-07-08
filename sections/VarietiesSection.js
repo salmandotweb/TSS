@@ -1,7 +1,7 @@
 import React from "react";
 import { BsLaptop } from "react-icons/bs";
-import Variety from "../../components/WebDesign/Variety";
-import classes from "../../styles/WebDesign/WebDesign.module.css";
+import Variety from "../components/Variety";
+import classes from "../styles/WebDesign.module.css";
 
 const VarietiesSection = () => {
 	return (

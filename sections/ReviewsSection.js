@@ -1,6 +1,6 @@
 import React from "react";
-import CarouselCard from "../../components/Home/CarouselCard";
-import classes from "../../styles/Home/ReviewsSection.module.css";
+import CarouselCard from "../components/CarouselCard";
+import classes from "../styles/ReviewsSection.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

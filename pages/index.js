@@ -1,12 +1,12 @@
 import Head from "next/head";
-import Footer from "../components/Global/Footer";
-import Header from "../components/Global/Header";
-import Navbar from "../components/Global/Navbar";
-import AboutSection from "../sections/HomePage/AboutSection";
-import BlogsSection from "../sections/HomePage/BlogsSection";
-import ReviewsSection from "../sections/HomePage/ReviewsSection";
-import ServicesSection from "../sections/HomePage/ServicesSection";
-import WorkSection from "../sections/HomePage/WorkSection";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import AboutSection from "../sections/AboutSection";
+import BlogsSection from "../sections/BlogsSection";
+import ReviewsSection from "../sections/ReviewsSection";
+import ServicesSection from "../sections/ServicesSection";
+import WorkSection from "../sections/WorkSection";
 
 export default function Home() {
 	return (

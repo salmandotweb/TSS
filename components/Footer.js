@@ -7,7 +7,7 @@ import {
 import { FaFacebookF } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import { IoChevronForwardCircle } from "react-icons/io5";
-import classes from "../../styles/Global/Footer.module.css";
+import classes from "../styles/Footer.module.css";
 
 const Footer = () => {
 	return (

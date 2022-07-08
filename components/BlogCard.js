@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../styles/Home/BlogsSection.module.css";
+import classes from "../styles/BlogsSection.module.css";
 
 const BlogCard = ({ img, date, year, description }) => {
 	return (

@@ -1,6 +1,6 @@
 import React from "react";
-import BlogCard from "../../components/Home/BlogCard";
-import classes from "../../styles/Home/BlogsSection.module.css";
+import BlogCard from "../components/BlogCard";
+import classes from "../styles/BlogsSection.module.css";
 
 const BlogsSection = () => {
 	return (

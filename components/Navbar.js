@@ -7,7 +7,7 @@ import {
 import { FiLinkedin } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
-import classes from "../../styles/Global/Navbar.module.css";
+import classes from "../styles/Navbar.module.css";
 import Link from "next/link";
 
 const SubLinks = ({ link1, link2, link3, link4, link5, link6 }) => (

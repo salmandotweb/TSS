@@ -1,6 +1,6 @@
 import React from "react";
 import { ImQuotesLeft } from "react-icons/im";
-import classes from "../../styles/Home/ReviewsSection.module.css";
+import classes from "../styles/ReviewsSection.module.css";
 
 const CarouselCard = () => {
 	return (

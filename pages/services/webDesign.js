@@ -1,12 +1,12 @@
 import Head from "next/head";
 import React from "react";
-import Footer from "../../components/Global/Footer";
-import Header from "../../components/Global/Header";
-import Navbar from "../../components/Global/Navbar";
-import ReviewsSection from "../../sections/HomePage/ReviewsSection";
-import WorkSection from "../../sections/HomePage/WorkSection";
-import TypesSection from "../../sections/WebDesign/TypesSection";
-import VarietiesSection from "../../sections/WebDesign/VarietiesSection";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import Navbar from "../../components/Navbar";
+import ReviewsSection from "../../sections/ReviewsSection";
+import WorkSection from "../../sections/WorkSection";
+import TypesSection from "../../sections/TypesSection";
+import VarietiesSection from "../../sections/VarietiesSection";
 
 const webDesign = () => {
 	return (
