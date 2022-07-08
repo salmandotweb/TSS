@@ -21,7 +21,9 @@ const SubLinks = ({ link1, link2, link3, link4, link5, link6 }) => (
 		<Link href="/services/ui&ux">
 			<p>{link3}</p>
 		</Link>
-		<p>{link4}</p>
+		<Link href="/services/contentCreation">
+			<p>{link4}</p>
+		</Link>
 		<p>{link5}</p>
 		<p>{link6}</p>
 	</div>

@@ -12,8 +12,7 @@ import ReviewsSection from "../../sections/ReviewsSection";
 import classes from "../../styles/WebDesign.module.css";
 import classes2 from "../../styles/DigitalMarketing.module.css";
 import classes3 from "../../styles/UIUX.module.css";
-import { GiMagnifyingGlass } from "react-icons/gi";
-import { FaLocationArrow, FaTv } from "react-icons/fa";
+import { IoLayers } from "react-icons/io5";
 
 const UIUX = () => {
 	return (
@@ -65,10 +64,10 @@ const UIUX = () => {
 					day and make changes to the strategy wherever required.
 				</p>
 				<div className={classes2.workTypes}>
-					<Type icon={<GiMagnifyingGlass />} name="SEO" />
-					<Type icon={<AiOutlineMobile />} name="Social Media Marketing" />
-					<Type icon={<FaLocationArrow />} name="Local SEO" />
-					<Type icon={<FaTv />} name="PPC Google Ads" />
+					<Type icon={<AiOutlineLaptop />} name="UI/UX Design" />
+					<Type icon={<IoLayers />} name="Logos & Brand Identy" />
+					<Type icon={<AiOutlineLaptop />} name="Website Design" />
+					<Type icon={<AiOutlineMobile />} name="Mobile Apps Design" />
 				</div>
 			</section>
 			<ReviewsSection />
