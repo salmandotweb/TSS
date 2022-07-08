@@ -1,0 +1,66 @@
+.howSection1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 5rem 15rem 5rem 15rem;
+}
+.howSection1 > p,
+.howSection2 > p {
+	margin-top: 5rem;
+	width: 70%;
+}
+.howSection2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 5rem 15rem 15rem 15rem;
+}
+.howSection2 > p {
+	margin-bottom: 10rem;
+}
+@media screen and (max-width: 1300px) {
+	.howSection1,
+	.howSection2 {
+		padding: 5rem 5rem 5rem 5rem;
+	}
+}
+@media screen and (max-width: 1146px) {
+	.howSection1 > p,
+	.howSection2 > p {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 962px) {
+	.howSection1 > p,
+	.howSection2 > p {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 592px) {
+	.howSection1 > p,
+	.howSection2 > p {
+		width: 100%;
+	}
+	.howSection1 > h1,
+	.howSection2 > h1 {
+		font-size: 5rem;
+	}
+}
+@media screen and (max-width: 425px) {
+	.howSection1,
+	.howSection2 {
+		padding: 3rem;
+	}
+	.howSection1 > h1,
+	.howSection2 > h1 {
+		font-size: 4rem;
+	}
+	.howSection1 > p,
+	.howSection2 > p {
+		font-size: 1.8rem;
+	}
+}
