@@ -27,7 +27,9 @@ const SubLinks = ({ link1, link2, link3, link4, link5, link6 }) => (
 		<Link href="/services/mobileApp">
 			<p>{link5}</p>
 		</Link>
-		<p>{link6}</p>
+		<Link href="/services/webApp">
+			<p>{link6}</p>
+		</Link>
 	</div>
 );
 
@@ -176,11 +178,13 @@ const Navbar = () => {
 									/>
 								)}
 							</div>
-							<h1
-								onClick={handleBlogs}
-								className={blogs ? classes.bold : classes.normal}>
-								Blogs
-							</h1>
+							<Link href="/blogs">
+								<h1
+									onClick={handleBlogs}
+									className={blogs ? classes.bold : classes.normal}>
+									Blogs
+								</h1>
+							</Link>
 							<h1
 								onClick={handleAbout}
 								className={about ? classes.bold : classes.normal}>

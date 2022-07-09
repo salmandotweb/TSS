@@ -16,6 +16,9 @@
 	justify-content: center;
 	width: 100%;
 }
+.workTypes:last-child {
+	margin-top: 10rem;
+}
 @media screen and (max-width: 1280px) {
 	.workSection {
 		padding: 5rem 10rem 20rem 10rem;

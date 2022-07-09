@@ -2,6 +2,25 @@ import React from "react";
 import Head from "next/head";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
+import Type from "../../components/Type";
+import classes from "../../styles/WebDesign.module.css";
+import classes2 from "../../styles/DigitalMarketing.module.css";
+import {
+	AiOutlineHeart,
+	AiOutlineLaptop,
+	AiOutlineMobile,
+} from "react-icons/ai";
+import { FiSettings } from "react-icons/fi";
+import { MdFastfood, MdFlight, MdOutlinePhonelinkRing } from "react-icons/md";
+import { BiCoinStack, BiHomeAlt, BiRocket } from "react-icons/bi";
+import Content from "../../components/Content";
+import Variety from "../../components/Variety";
+import { GiMagnifyingGlass } from "react-icons/gi";
+import { FaTaxi } from "react-icons/fa";
+import { BsCart4 } from "react-icons/bs";
+import { IoSchoolSharp } from "react-icons/io5";
+import ReviewsSection from "../../sections/ReviewsSection";
+import Footer from "../../components/Footer";
 
 const mobileApp = () => {
 	return (
@@ -22,6 +41,69 @@ const mobileApp = () => {
 				space="&nbsp;"
 				description="Our experienced app developers create modern, high end apps that put your business right in front of your audience's hands."
 			/>
+			<section className={classes.typesSection}>
+				<div className={classes.types}>
+					<Type icon={<AiOutlineMobile />} name="Apps concept & roadmap" />
+					<Type
+						icon={<MdOutlinePhonelinkRing />}
+						name="App design & prototyping"
+					/>
+					<Type icon={<AiOutlineLaptop />} name="Apps development process" />
+					<Type
+						icon={<FiSettings />}
+						name="User testing of the app and fixes"
+					/>
+					<Type icon={<BiRocket />} name="App launch & support" />
+				</div>
+				<Content
+					title="Best app developers in UK"
+					description="We consider ourselves as the top app developers in UK because have a passion to develope and code beautiful apps. We work with all types of business that are in need of their business app and development and unlike other app development companies we give value to our client and their needs."
+				/>
+			</section>
+			<section className={classes.varietiesSection}>
+				<Variety
+					title="Native Mobile"
+					icon={<AiOutlineMobile />}
+					description="Native app development is created and optimised for a specific platform, resulting in higher performance, and more security."
+				/>
+				<Variety
+					title="Hybrid Mobile Apps"
+					icon={<AiOutlineMobile />}
+					description="Native app development is created and optimised for a specific platform, resulting in higher performance, and more security."
+				/>
+				<Variety
+					title="Web Apps"
+					icon={<AiOutlineMobile />}
+					description="Native app development is created and optimised for a specific platform, resulting in higher performance, and more security."
+				/>
+			</section>
+			<section className={classes2.workSection}>
+				<h1>What we do for you?</h1>
+				<p>
+					SEO is not straightforward and not an easy process. It's takes time to
+					rank a website on top of Google searches. We use agile SEO techniques
+					to rank websites and what we do is amazing. SEO need regular work to
+					stay on top of your competition, and every website needs a digital
+					marketing strategy; otherwise, it will fall behind and not generate
+					any business. We use industry-leading tools for reporting and daily
+					optimization. Our specialists monitor the campaign's performance every
+					day and make changes to the strategy wherever required.
+				</p>
+				<div className={classes2.workTypes}>
+					<Type icon={<MdFlight />} name="Travel & Booking Apps" />
+					<Type icon={<MdFastfood />} name="Food Delivery Apps" />
+					<Type icon={<BiHomeAlt />} name="Real Estate Apps" />
+					<Type icon={<FaTaxi />} name="Taxi Apps" />
+				</div>
+				<div className={classes2.workTypes}>
+					<Type icon={<BiCoinStack />} name="Forex Trading Apps" />
+					<Type icon={<BsCart4 />} name="eCommerce Apps" />
+					<Type icon={<IoSchoolSharp />} name="Learning& Education Apps" />
+					<Type icon={<AiOutlineHeart />} name="Health & Wellness Apps" />
+				</div>
+			</section>
+			<ReviewsSection />
+			<Footer />
 		</div>
 	);
 };
