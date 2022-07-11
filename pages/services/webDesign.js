@@ -8,7 +8,7 @@ import WorkSection from "../../sections/WorkSection";
 import TypesSection from "../../sections/TypesSection";
 import VarietiesSection from "../../sections/VarietiesSection";
 
-const webDesign = () => {
+const WebDesign = () => {
 	return (
 		<div>
 			<Head>
@@ -34,4 +34,4 @@ const webDesign = () => {
 	);
 };
 
-export default webDesign;
+export default WebDesign;

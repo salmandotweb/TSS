@@ -5,7 +5,7 @@ import Content from "../../components/Content";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
 import Type from "../../components/Type";
-import classes from "../../styles/webDesign.module.css";
+import classes from "../../styles/WebDesign.module.css";
 import classes2 from "../../styles/DigitalMarketing.module.css";
 import ReviewsSection from "../../sections/ReviewsSection";
 import Footer from "../../components/Footer";
