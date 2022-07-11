@@ -2,6 +2,13 @@ import React from "react";
 import classes from "../styles/Blogs.module.css";
 
 const BlogCard = () => {
+	function truncateString(str, num) {
+		if (str.length > num) {
+			return str.slice(0, num) + "...";
+		} else {
+			return str;
+		}
+	}
 	return (
 		<div className={classes.blogCard}>
 			<div className={classes.imageContainer}>

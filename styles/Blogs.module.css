@@ -8,11 +8,16 @@
 }
 .blogCard {
 	width: 42rem;
-	height: 48rem;
+	min-height: 48rem;
 	background: var(--f6f);
 	box-shadow: 0px 3px 6px #00000029;
 	border-radius: 0.5rem;
 	overflow: hidden;
+	cursor: pointer;
+	transition: 250ms all;
+}
+.blogCard:hover {
+	transform: scale(1.02);
 }
 .imageContainer {
 	height: 28rem;
@@ -34,4 +39,59 @@
 .details > p {
 	font-size: 1.4rem;
 	margin-top: 3rem;
+}
+@media screen and (max-width: 1440px) {
+	.cardsSection {
+		padding: 10rem 5rem;
+	}
+	.blogCard {
+		width: 38rem;
+	}
+}
+@media screen and (max-width: 1340px) {
+	.cardsSection {
+		padding: 10rem;
+	}
+	.blogCard {
+		width: 40vw;
+	}
+}
+@media screen and (max-width: 1272px) {
+	.blogCard {
+		width: 35vw;
+	}
+}
+@media screen and (max-width: 1192px) {
+	.blogCard {
+		width: 32vw;
+	}
+	.cardsSection {
+		padding: 10rem 5rem;
+	}
+}
+@media screen and (max-width: 1178px) {
+	.blogCard {
+		width: 40rem;
+	}
+}
+@media screen and (max-width: 962px) {
+	.blogCard {
+		width: 38rem;
+	}
+}
+@media screen and (max-width: 910px) {
+	.blogCard {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 425px) {
+	.cardsSection {
+		padding: 5rem 2rem;
+	}
+	.details {
+		padding: 3rem;
+	}
+	.details > h1 {
+		font-size: 2.5rem;
+	}
 }

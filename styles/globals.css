@@ -250,6 +250,7 @@ input::placeholder {
 	align-items: center !important;
 	justify-content: center !important;
 	margin-bottom: 5rem !important;
+	width: 100% !important;
 }
 .react-tabs__tab--selected {
 	color: var(--ec4) !important;
@@ -258,7 +259,64 @@ input::placeholder {
 	border: 0 !important;
 	font-weight: 600 !important;
 	font-size: 2.5rem !important;
+	white-space: nowrap !important;
 }
 .react-tabs__tab:not(:last-child) {
 	margin-right: 4rem !important;
+}
+@media screen and (max-width: 1306px) {
+	.react-tabs__tab:not(:last-child) {
+		margin-right: 2rem !important;
+	}
+}
+@media screen and (max-width: 984px) {
+	.react-tabs__tab-list {
+		padding-left: 20rem !important;
+		overflow-x: scroll !important;
+	}
+}
+@media screen and (max-width: 879px) {
+	.react-tabs__tab-list {
+		padding-left: 25rem !important;
+	}
+}
+@media screen and (max-width: 807px) {
+	.react-tabs__tab-list {
+		padding-left: 30rem !important;
+	}
+}
+@media screen and (max-width: 749px) {
+	.react-tabs__tab-list {
+		padding-left: 35rem !important;
+	}
+}
+@media screen and (max-width: 705px) {
+	.react-tabs__tab-list {
+		padding-left: 40rem !important;
+	}
+}
+@media screen and (max-width: 657px) {
+	.react-tabs__tab-list {
+		padding-left: 45rem !important;
+	}
+}
+@media screen and (max-width: 601px) {
+	.react-tabs__tab-list {
+		padding-left: 50rem !important;
+	}
+}
+@media screen and (max-width: 558px) {
+	.react-tabs__tab-list {
+		padding-left: 0 !important;
+		flex-wrap: wrap !important;
+		overflow: hidden !important;
+	}
+	.react-tabs__tab:not(:last-child) {
+		margin-right: 0rem !important;
+	}
+}
+@media screen and (max-width: 425px) {
+	.react-tabs__tab {
+		font-size: 2rem !important;
+	}
 }
