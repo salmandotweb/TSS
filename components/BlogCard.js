@@ -1,18 +1,15 @@
 import React from "react";
-import classes from "../styles/BlogsSection.module.css";
+import classes from "../styles/Blogs.module.css";
 
-const BlogCard = ({ img, date, year, description }) => {
+const BlogCard = () => {
 	return (
 		<div className={classes.blogCard}>
 			<div className={classes.imageContainer}>
-				<img src={img} alt="blog" />
+				<img src="/assets/blogImage2.png" alt="Blog Image" />
 			</div>
 			<div className={classes.details}>
-				<div>
-					<h2>{date}</h2>
-					<p>{year}</p>
-				</div>
-				<p>{description}</p>
+				<h1>Blog vs Website: Which one is Best for you?</h1>
+				<p>March 21, 2022</p>
 			</div>
 		</div>
 	);

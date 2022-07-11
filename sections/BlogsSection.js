@@ -1,5 +1,5 @@
 import React from "react";
-import BlogCard from "../components/BlogCard";
+import Blog from "../components/Blog";
 import classes from "../styles/BlogsSection.module.css";
 
 const BlogsSection = () => {
@@ -15,13 +15,13 @@ const BlogsSection = () => {
 				</button>
 			</div>
 			<div className={classes.container}>
-				<BlogCard
+				<Blog
 					img="assets/blogImage.png"
 					date="19.03"
 					year="2022"
 					description="7 Key Benefits of Pay Monthly Website : Your business doesn’t get the representation it needs in today’s world without a website."
 				/>
-				<BlogCard
+				<Blog
 					img="assets/blogImage2.png"
 					date="15.10"
 					year="2021"

@@ -1,0 +1,37 @@
+.cardsSection {
+	padding: 10rem 15rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	grid-gap: 5rem;
+}
+.blogCard {
+	width: 42rem;
+	height: 48rem;
+	background: var(--f6f);
+	box-shadow: 0px 3px 6px #00000029;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+.imageContainer {
+	height: 28rem;
+	width: 100%;
+	overflow: hidden;
+}
+.imageContainer > img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+.details {
+	padding: 5rem 3rem;
+	width: 100%;
+}
+.details > h1 {
+	font-size: 3rem;
+}
+.details > p {
+	font-size: 1.4rem;
+	margin-top: 3rem;
+}

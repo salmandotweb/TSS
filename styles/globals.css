@@ -233,3 +233,32 @@ input::placeholder {
 		margin-top: 3rem;
 	}
 }
+/* tabs stylings */
+.react-tabs {
+	width: 100% !important;
+}
+.react-tabs__tab-panel--selected {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	flex-wrap: wrap !important;
+	grid-gap: 5rem !important;
+}
+.react-tabs__tab-list {
+	border-bottom: 0 !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	margin-bottom: 5rem !important;
+}
+.react-tabs__tab--selected {
+	color: var(--ec4) !important;
+}
+.react-tabs__tab {
+	border: 0 !important;
+	font-weight: 600 !important;
+	font-size: 2.5rem !important;
+}
+.react-tabs__tab:not(:last-child) {
+	margin-right: 4rem !important;
+}

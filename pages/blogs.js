@@ -3,6 +3,10 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
+import classes from "../styles/Blogs.module.css";
+import BlogCard from "../components/BlogCard";
 
 const blogs = () => {
 	return (
@@ -22,6 +26,61 @@ const blogs = () => {
 				bgText2="Space"
 				space="&nbsp;"
 			/>
+			<section className={classes.cardsSection}>
+				<Tabs>
+					<TabList>
+						<Tab>All</Tab>
+						<Tab>Website</Tab>
+						<Tab>E-commerce</Tab>
+						<Tab>SEO</Tab>
+						<Tab>Digital Marketing</Tab>
+						<Tab>Ui Design</Tab>
+						<Tab>Trending</Tab>
+					</TabList>
+
+					<TabPanel>
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+					</TabPanel>
+					<TabPanel>
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+					</TabPanel>
+					<TabPanel>
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+					</TabPanel>
+					<TabPanel>
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+					</TabPanel>
+					<TabPanel>
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+					</TabPanel>
+					<TabPanel>
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+					</TabPanel>
+					<TabPanel>
+						<BlogCard />
+						<BlogCard />
+						<BlogCard />
+					</TabPanel>
+				</Tabs>
+			</section>
 			<Footer />
 		</div>
 	);
