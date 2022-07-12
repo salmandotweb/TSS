@@ -185,11 +185,13 @@ const Navbar = () => {
 									Blogs
 								</h1>
 							</Link>
-							<h1
-								onClick={handleAbout}
-								className={about ? classes.bold : classes.normal}>
-								About Us
-							</h1>
+							<Link href="/aboutUs">
+								<h1
+									onClick={handleAbout}
+									className={about ? classes.bold : classes.normal}>
+									About Us
+								</h1>
+							</Link>
 							<h1
 								onClick={handleContact}
 								className={contact ? classes.bold : classes.normal}>

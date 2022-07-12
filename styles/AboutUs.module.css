@@ -1,0 +1,73 @@
+.gradient {
+	background: -webkit-linear-gradient(#4998c3, #854a93);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.aboutSection {
+	padding: 10rem 15vw;
+}
+.aboutSection > h1 {
+	margin-bottom: 5rem;
+}
+.aboutSection > p {
+	font-size: 2.6rem;
+	letter-spacing: 0.03rem;
+}
+.aboutSection > p:not(:last-child) {
+	margin-bottom: 5rem;
+}
+@media screen and (max-width: 1146px) {
+	.aboutSection {
+		padding: 10rem 5rem;
+	}
+}
+@media screen and (max-width: 820px) {
+	.aboutSection {
+		padding: 5rem;
+	}
+	.aboutSection > h1 {
+		font-size: 4.5rem;
+	}
+	.aboutSection > p {
+		font-size: 2.3rem;
+	}
+	.aboutSection > p:not(:last-child) {
+		margin-bottom: 4rem;
+	}
+}
+@media screen and (max-width: 604px) {
+	.aboutSection > h1 {
+		font-size: 4rem;
+	}
+	.aboutSection > h1 {
+		margin-bottom: 4rem;
+	}
+	.aboutSection > p {
+		font-size: 2rem;
+	}
+	.aboutSection > p:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
+@media screen and (max-width: 526px) {
+	.aboutSection {
+		padding: 3rem;
+	}
+	.aboutSection > h1 {
+		font-size: 3.5rem;
+	}
+	.aboutSection > h1 {
+		margin-bottom: 3rem;
+	}
+}
+@media screen and (max-width: 425px) {
+	.aboutSection > h1 {
+		font-size: 3rem;
+	}
+}
+@media screen and (max-width: 320px) {
+	.aboutSection {
+		padding: 3rem 2rem;
+		text-align: left;
+	}
+}
