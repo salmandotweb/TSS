@@ -1,0 +1,135 @@
+.contactSection {
+	padding: 10rem 15vw;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.left {
+	flex: 0.5;
+}
+.left > h1 {
+	font-size: 3.5rem;
+	line-height: 0.9;
+}
+.linksContainer {
+	padding: 5rem 0;
+}
+.links > svg {
+	font-size: 3.5rem;
+	transition: 250ms all;
+	cursor: pointer;
+}
+.links > svg:hover {
+	color: var(--ec4);
+}
+.links > svg:not(:last-child) {
+	margin-right: 2.5rem;
+}
+.linksContainer > p {
+	font-size: 2.3rem;
+	font-weight: 600;
+	margin-top: 1rem;
+}
+.left > h2 {
+	font-size: 3.5rem;
+	font-weight: 900;
+	margin-bottom: 2rem;
+}
+.left > p {
+	font-weight: 600;
+	font-size: 2.2rem;
+}
+.left > p:not(:last-child) {
+	margin-bottom: 0.1rem;
+}
+.right {
+	flex: 0.5;
+}
+.right > h2 {
+	font-weight: 900;
+	font-size: 3.5rem;
+	line-height: 0.9;
+}
+.form {
+	padding: 3rem 0 0 0;
+}
+.input {
+	width: 100%;
+	border-bottom: 0.2rem solid var(--999);
+	padding: 0.5rem;
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: var(--2e2);
+	transition: 250ms all;
+	padding: 0 0 1.5rem 0;
+}
+.input::placeholder {
+	color: var(--2e2);
+}
+.input:not(:last-child) {
+	margin-bottom: 4rem;
+}
+@media screen and (max-width: 1182px) {
+	.contactSection {
+		padding: 10rem;
+	}
+}
+@media screen and (max-width: 1032px) {
+	.contactSection {
+		padding: 7rem 5rem;
+	}
+}
+@media screen and (max-width: 908px) {
+	.contactSection {
+		flex-direction: column-reverse;
+	}
+	.left {
+		flex: 1;
+		margin-top: 5rem;
+		text-align: center;
+		width: 100%;
+	}
+	.right {
+		flex: 1;
+		width: 100%;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 516px) {
+	.contactSection {
+		padding: 5rem 4rem;
+	}
+	.right > h2 {
+		margin-bottom: 2rem;
+	}
+}
+@media screen and (max-width: 425px) {
+	.right > h2 {
+		font-size: 3rem;
+	}
+	.links > svg {
+		font-size: 3rem;
+	}
+	.left > h1 {
+		font-size: 3rem;
+	}
+	.linksContainer > p {
+		font-size: 2rem;
+	}
+	.left > p {
+		font-weight: 600;
+		font-size: 2rem;
+	}
+}
+@media screen and (max-width: 375px) {
+	.contactSection {
+		padding: 5rem 3rem;
+	}
+	.right > h2 {
+		font-size: 3rem;
+	}
+	.left > h1 {
+		font-size: 3rem;
+	}
+}

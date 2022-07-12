@@ -192,11 +192,13 @@ const Navbar = () => {
 									About Us
 								</h1>
 							</Link>
-							<h1
-								onClick={handleContact}
-								className={contact ? classes.bold : classes.normal}>
-								Contact Us
-							</h1>
+							<Link href="/contactUs">
+								<h1
+									onClick={handleContact}
+									className={contact ? classes.bold : classes.normal}>
+									Contact Us
+								</h1>
+							</Link>
 						</div>
 						<div className={classes.subLinksContainer}>
 							{services && (
