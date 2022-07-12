@@ -99,9 +99,11 @@ const Navbar = () => {
 					<FaFacebookF />
 				</div>
 			</div>
-			<div className={classes.logo}>
-				<img src="/assets/logo.svg" alt="logo" />
-			</div>
+			<Link href="/">
+				<div className={classes.logo}>
+					<img src="/assets/logo.svg" alt="logo" />
+				</div>
+			</Link>
 			<div className={classes.right}>
 				<p>0203 876 6726</p>
 				<div className={classes.menu} onClick={handleShow}>
