@@ -2,10 +2,10 @@ import Link from "next/link";
 import React from "react";
 import classes from "../styles/Blogs.module.css";
 
-const BlogCard = ({ title, date, image, link }) => {
+const BlogCard = ({ title, date, image, link, key }) => {
 	return (
 		<Link href={`/blogs/${link}`}>
-			<div className={classes.blogCard}>
+			<div className={classes.blogCard} key={key}>
 				<div className={classes.imageContainer}>
 					<img src={image} alt={title} />
 				</div>

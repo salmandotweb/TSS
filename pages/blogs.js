@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useId, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
@@ -49,6 +49,7 @@ export async function getStaticProps() {
 }
 
 const blogs = ({ posts }) => {
+	const id = useId();
 	return (
 		<div>
 			<Head>
@@ -81,6 +82,7 @@ const blogs = ({ posts }) => {
 						{posts.map((post) => {
 							return (
 								<BlogCard
+									key={id}
 									image={post.node.featuredImage.url}
 									title={post.node.title}
 									date={post.node.date}
