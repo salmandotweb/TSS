@@ -144,7 +144,7 @@ const Navbar = () => {
 								<FaFacebookF />
 							</div>
 						</div>
-						<div className={classes.logo}>
+						<div className={classes.logo} onClick={() => setShow(false)}>
 							<img src="/assets/footerLogo.svg" alt="logo" />
 						</div>
 						<div className={classes.right}>

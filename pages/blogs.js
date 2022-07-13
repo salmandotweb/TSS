@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
@@ -7,8 +7,48 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import classes from "../styles/Blogs.module.css";
 import BlogCard from "../components/BlogCard";
+import { request, gql } from "graphql-request";
 
-const blogs = () => {
+const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
+
+export const getPosts = async () => {
+	const query = gql`
+		query MyQuery {
+			postsConnection {
+				edges {
+					node {
+						author {
+							id
+							name
+						}
+						date
+						slug
+						title
+						content {
+							html
+						}
+						featuredImage {
+							url
+						}
+					}
+				}
+			}
+		}
+	`;
+	const result = await request(graphqlAPI, query);
+	return result.postsConnection.edges;
+};
+
+export async function getStaticProps() {
+	const posts = (await getPosts()) || [];
+	return {
+		props: {
+			posts,
+		},
+	};
+}
+
+const blogs = ({ posts }) => {
 	return (
 		<div>
 			<Head>
@@ -37,47 +77,17 @@ const blogs = () => {
 						<Tab>Ui Design</Tab>
 						<Tab>Trending</Tab>
 					</TabList>
-
 					<TabPanel>
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-					</TabPanel>
-					<TabPanel>
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-					</TabPanel>
-					<TabPanel>
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-					</TabPanel>
-					<TabPanel>
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-					</TabPanel>
-					<TabPanel>
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-					</TabPanel>
-					<TabPanel>
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
-					</TabPanel>
-					<TabPanel>
-						<BlogCard />
-						<BlogCard />
-						<BlogCard />
+						{posts.map((post) => {
+							return (
+								<BlogCard
+									image={post.node.featuredImage.url}
+									title={post.node.title}
+									date={post.node.date}
+									link={post.node.slug}
+								/>
+							);
+						})}
 					</TabPanel>
 				</Tabs>
 			</section>
