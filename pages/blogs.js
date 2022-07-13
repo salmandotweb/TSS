@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useEffect, useId, useState } from "react";
+import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
@@ -30,6 +30,7 @@ export const getPosts = async () => {
 						featuredImage {
 							url
 						}
+						id
 					}
 				}
 			}
@@ -47,7 +48,6 @@ export async function getStaticProps() {
 		},
 	};
 }
-const id = useId();
 
 const blogs = ({ posts }) => {
 	return (
@@ -82,7 +82,7 @@ const blogs = ({ posts }) => {
 						{posts.map((post) => {
 							return (
 								<BlogCard
-									key={id}
+									key={post.node.id}
 									image={post.node.featuredImage.url}
 									title={post.node.title}
 									date={post.node.date}
