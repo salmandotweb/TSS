@@ -94,6 +94,96 @@ const blogs = ({ posts }) => {
 							);
 						})}
 					</TabPanel>
+					<TabPanel>
+						{posts.map((post) => {
+							if (post.node.categories[0].name === "Website") {
+								return (
+									<BlogCard
+										key={post.node.id}
+										image={post.node.featuredImage.url}
+										title={post.node.title}
+										date={post.node.date}
+										link={post.node.slug}
+									/>
+								);
+							}
+						})}
+					</TabPanel>
+					<TabPanel>
+						{posts.map((post) => {
+							if (post.node.categories[0].name === "E-commerce") {
+								return (
+									<BlogCard
+										key={post.node.id}
+										image={post.node.featuredImage.url}
+										title={post.node.title}
+										date={post.node.date}
+										link={post.node.slug}
+									/>
+								);
+							}
+						})}
+					</TabPanel>
+					<TabPanel>
+						{posts.map((post) => {
+							if (post.node.categories[0].name === "SEO") {
+								return (
+									<BlogCard
+										key={post.node.id}
+										image={post.node.featuredImage.url}
+										title={post.node.title}
+										date={post.node.date}
+										link={post.node.slug}
+									/>
+								);
+							}
+						})}
+					</TabPanel>
+					<TabPanel>
+						{posts.map((post) => {
+							if (post.node.categories[0].name === "Digital Marketing") {
+								return (
+									<BlogCard
+										key={post.node.id}
+										image={post.node.featuredImage.url}
+										title={post.node.title}
+										date={post.node.date}
+										link={post.node.slug}
+									/>
+								);
+							}
+						})}
+					</TabPanel>
+					<TabPanel>
+						{posts.map((post) => {
+							if (post.node.categories[0].name === "Ui Design") {
+								return (
+									<BlogCard
+										key={post.node.id}
+										image={post.node.featuredImage.url}
+										title={post.node.title}
+										date={post.node.date}
+										link={post.node.slug}
+									/>
+								);
+							}
+						})}
+					</TabPanel>
+					<TabPanel>
+						{posts.map((post) => {
+							if (post.node.categories[0].name === "Trending") {
+								return (
+									<BlogCard
+										key={post.node.id}
+										image={post.node.featuredImage.url}
+										title={post.node.title}
+										date={post.node.date}
+										link={post.node.slug}
+									/>
+								);
+							}
+						})}
+					</TabPanel>
 				</Tabs>
 			</section>
 			<Footer />
