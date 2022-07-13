@@ -27,6 +27,9 @@ export const getPosts = async () => {
 						content {
 							html
 						}
+						categories {
+							name
+						}
 						featuredImage {
 							url
 						}
