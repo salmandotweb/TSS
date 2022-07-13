@@ -47,9 +47,9 @@ export async function getStaticProps() {
 		},
 	};
 }
+const id = useId();
 
 const blogs = ({ posts }) => {
-	const id = useId();
 	return (
 		<div>
 			<Head>
