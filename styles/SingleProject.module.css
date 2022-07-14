@@ -1,0 +1,103 @@
+.header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 5rem 10vw;
+}
+.left {
+	flex: 0.5;
+	margin-right: 5rem;
+}
+.left > h2 {
+	color: var(--0f6);
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+.left > p {
+	font-size: 2.2rem;
+	width: 80%;
+}
+.info {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 10rem;
+}
+.info > div:not(:last-child) {
+	margin-right: 6rem;
+}
+.info > div > h3 {
+	margin-bottom: 1rem;
+	font-size: 2.2rem;
+	color: var(--2e2);
+}
+.info > div > p {
+	color: var(--0f6);
+	font-size: 1.9rem;
+	font-weight: 500;
+}
+.involvement {
+	display: flex;
+	flex-direction: column;
+	white-space: break-spaces;
+}
+.right {
+	flex: 0.5;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.right > img {
+	width: 100%;
+}
+.visitBtn {
+	color: var(--2e2);
+	font-weight: 600;
+	border-color: var(--2e2);
+	position: relative;
+	margin-top: 5rem;
+}
+.visitBtn::after {
+	content: "";
+	position: absolute;
+	top: 0rem;
+	left: -0.6rem;
+	height: 12rem;
+	width: 12rem;
+	border-radius: 50%;
+	border: 0.1rem solid var(--2e2);
+	z-index: -1;
+}
+.showcase {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--2e2);
+	padding: 5vw;
+}
+.showcaseImage {
+	width: 100rem;
+}
+.showcaseImage > img {
+	width: 100%;
+}
+.showcaseImage:first-child {
+	margin-right: 7rem;
+}
+.showcaseImage:last-child {
+	margin-top: 30rem;
+}
+.mainImage {
+	width: 100%;
+	height: 100rem;
+}
+.mainImage > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.mobileImage {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10vw;
+}

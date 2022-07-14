@@ -20,6 +20,22 @@ export const getProjectDetails = async (slug) => {
 				description
 				reverse
 				slug
+				overview
+				industry
+				involvement
+				location
+				showcaseImage1 {
+					url
+				}
+				showcaseImage2 {
+					url
+				}
+				mainImage {
+					url
+				}
+				mobileImage {
+					url
+				}
 			}
 		}
 	`;
@@ -52,7 +68,6 @@ export async function getStaticPaths() {
 }
 
 const SingleProject = ({ project }) => {
-	console.log(project);
 	return (
 		<>
 			<Head>
@@ -61,8 +76,47 @@ const SingleProject = ({ project }) => {
 				<link rel="icon" href="/favicon.svg" />
 			</Head>
 			<Navbar />
-			<div>
-				<h1>{project.title}</h1>
+			<div className={classes.singleProject}>
+				<div className={classes.header}>
+					<div className={classes.left}>
+						<h2>{project.title}</h2>
+						<p>{project.overview}</p>
+						<div className={classes.info}>
+							<div>
+								<h3>Industry</h3>
+								<p>{project.industry}</p>
+							</div>
+							<div>
+								<h3>Location</h3>
+								<p>{project.location}</p>
+							</div>
+							<div>
+								<h3>Involvement</h3>
+								<p className={classes.involvement}>{project.involvement}</p>
+							</div>
+						</div>
+					</div>
+					<div className={classes.right}>
+						<img src={project.image.url} alt={project.title} />
+						<button className={`circleBtn ${classes.visitBtn}`}>
+							Visit Website
+						</button>
+					</div>
+				</div>
+				<div className={classes.showcase}>
+					<div className={classes.showcaseImage}>
+						<img src={project.showcaseImage1.url} alt={project.title} />
+					</div>
+					<div className={classes.showcaseImage}>
+						<img src={project.showcaseImage2.url} alt={project.title} />
+					</div>
+				</div>
+				<div className={classes.mainImage}>
+					<img src={project.mainImage.url} alt={project.title} />
+				</div>
+				<div className={classes.mobileImage}>
+					<img src={project.mobileImage.url} alt={project.title} />
+				</div>
 			</div>
 			<Footer />
 		</>
