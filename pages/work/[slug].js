@@ -4,6 +4,7 @@ import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { getProjects } from "../index";
+import classes from "../../styles/SingleProject.module.css";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
