@@ -23,6 +23,7 @@ export const getProjects = async () => {
 				}
 				description
 				reverse
+				slug
 			}
 		}
 	`;
@@ -72,6 +73,7 @@ export default function Home({ projects }) {
 									img={project.image.url}
 									title={project.title}
 									description={project.description}
+									link={project.slug}
 								/>
 							);
 						} else if (project.reverse === true) {
@@ -81,6 +83,7 @@ export default function Home({ projects }) {
 									title={project.title}
 									description={project.description}
 									classname="reverse"
+									link={project.slug}
 								/>
 							);
 						}

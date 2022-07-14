@@ -1,7 +1,8 @@
 import React from "react";
+import Link from "next/link";
 import classes from "../styles/WorkSection.module.css";
 
-const WorkCard = ({ classname, img, title, description }) => {
+const WorkCard = ({ classname, img, title, description, link }) => {
 	return (
 		<div className={`${classes[classname]} ${classes.workCard}`}>
 			<div className={classes.imageContainer}>
@@ -10,7 +11,9 @@ const WorkCard = ({ classname, img, title, description }) => {
 			<div className={classes.info}>
 				<h1>{title}</h1>
 				<p>{description}</p>
-				<button className="circleBtn">View Project</button>
+				<Link href={`/work/${link}`}>
+					<button className="circleBtn">View Project</button>
+				</Link>
 			</div>
 		</div>
 	);
