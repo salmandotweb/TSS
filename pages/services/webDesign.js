@@ -4,11 +4,44 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
 import ReviewsSection from "../../sections/ReviewsSection";
-import WorkSection from "../../sections/WorkSection";
 import TypesSection from "../../sections/TypesSection";
 import VarietiesSection from "../../sections/VarietiesSection";
+import classes from "../../styles/WorkSection.module.css";
 
-const webDesign = () => {
+import { request, gql } from "graphql-request";
+import WorkCard from "../../components/WorkCard";
+
+const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
+
+export const getProjects = async () => {
+	const query = gql`
+		query MyQuery {
+			projects {
+				id
+				title
+				image {
+					url
+				}
+				description
+				reverse
+				slug
+			}
+		}
+	`;
+	const result = await request(graphqlAPI, query);
+	return result.projects;
+};
+
+export async function getStaticProps() {
+	const projects = (await getProjects()) || [];
+	return {
+		props: {
+			projects,
+		},
+	};
+}
+
+const webDesign = ({ projects }) => {
 	return (
 		<div>
 			<Head>
@@ -27,7 +60,39 @@ const webDesign = () => {
 			/>
 			<TypesSection />
 			<VarietiesSection />
-			<WorkSection />
+			<section className={classes.workSection}>
+				<h1 className="sectionTitle">
+					Our <br /> Work
+				</h1>
+				<div className={classes.cardsContainer}>
+					{projects.map((project) => {
+						if (project.reverse === false) {
+							return (
+								<WorkCard
+									img={project.image.url}
+									title={project.title}
+									description={project.description}
+									link={project.slug}
+								/>
+							);
+						} else if (project.reverse === true) {
+							return (
+								<WorkCard
+									img={project.image.url}
+									title={project.title}
+									description={project.description}
+									classname="reverse"
+									link={project.slug}
+								/>
+							);
+						}
+					})}
+				</div>
+				<div className={classes.viewAll}>
+					<div className={classes.line}></div>
+					<h2>View All Projects</h2>
+				</div>
+			</section>
 			<ReviewsSection />
 			<Footer />
 		</div>
