@@ -6,8 +6,7 @@ import Navbar from "../../components/Navbar";
 import Head from "next/head";
 import Footer from "../../components/Footer";
 
-const graphqlAPI =
-	"https://api-ap-south-1.hygraph.com/v2/cl5jrnynk207l01t71pe31jzl/master";
+const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
 export const getPostDetails = async (slug) => {
 	const query = gql`
