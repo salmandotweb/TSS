@@ -101,6 +101,17 @@
 	justify-content: center;
 	padding: 10vw;
 }
+.mobileImage > img {
+	width: 100%;
+}
+@media screen and (max-width: 1306px) {
+	.showcaseImage {
+		width: 40%;
+	}
+	.showcase {
+		padding: 2vw;
+	}
+}
 @media screen and (max-width: 1268px) {
 	.header {
 		flex-direction: column;
@@ -124,6 +135,21 @@
 	.right {
 		flex: 1;
 		align-items: center;
+	}
+}
+@media screen and (max-width: 802px) {
+	.showcaseImage {
+		width: 70%;
+	}
+	.showcase {
+		padding: 5vw;
+		flex-direction: column;
+	}
+	.showcaseImage:first-child {
+		margin-right: 0;
+	}
+	.showcaseImage:last-child {
+		margin-top: 2rem;
 	}
 }
 @media screen and (max-width: 714px) {
@@ -174,6 +200,9 @@
 	}
 	.left > p {
 		font-size: 1.6rem;
+	}
+	.showcaseImage {
+		width: 100%;
 	}
 }
 @media screen and (max-width: 320px) {

@@ -103,7 +103,7 @@ const SingleProject = ({ project }) => {
 						</button>
 					</div>
 				</div>
-				{/* <div className={classes.showcase}>
+				<div className={classes.showcase}>
 					<div className={classes.showcaseImage}>
 						<img src={project.showcaseImage1.url} alt={project.title} />
 					</div>
@@ -116,7 +116,7 @@ const SingleProject = ({ project }) => {
 				</div>
 				<div className={classes.mobileImage}>
 					<img src={project.mobileImage.url} alt={project.title} />
-				</div> */}
+				</div>
 			</div>
 			<Footer />
 		</>
