@@ -101,3 +101,83 @@
 	justify-content: center;
 	padding: 10vw;
 }
+@media screen and (max-width: 1268px) {
+	.header {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.left {
+		flex: 1;
+		margin-right: 0;
+		text-align: center;
+		margin-bottom: 5rem;
+	}
+	.left > p {
+		width: 100%;
+		text-align: center;
+	}
+	.info {
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.right {
+		flex: 1;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 714px) {
+	.header {
+		padding: 5rem;
+	}
+}
+@media screen and (max-width: 624px) {
+	.left > p {
+		font-size: 1.9rem;
+	}
+}
+@media screen and (max-width: 561px) {
+	.info {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin-top: 3rem;
+	}
+	.info > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.info > div:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+}
+@media screen and (max-width: 543px) {
+	.visitBtn::after {
+		content: "";
+		position: absolute;
+		top: 0rem;
+		left: -0.6rem;
+		height: 10rem;
+		width: 10rem;
+		border-radius: 50%;
+		border: 0.1rem solid var(--2e2);
+		z-index: -1;
+	}
+}
+@media screen and (max-width: 425px) {
+	.header {
+		padding: 3rem;
+	}
+	.left > p {
+		font-size: 1.6rem;
+	}
+}
+@media screen and (max-width: 320px) {
+	.header {
+		padding: 2rem;
+	}
+}
