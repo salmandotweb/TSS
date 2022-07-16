@@ -4,13 +4,18 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import WorkCard from "../components/WorkCard";
 import AboutSection from "../sections/AboutSection";
-import BlogsSection from "../sections/BlogsSection";
 import ReviewsSection from "../sections/ReviewsSection";
 import ServicesSection from "../sections/ServicesSection";
 import classes from "../styles/WorkSection.module.css";
+import classes2 from "../styles/BlogsSection.module.css";
 import { request, gql } from "graphql-request";
+import { getPosts } from "./blogs";
+import Blog from "../components/Blog";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
+
+const date = new Date();
+const year = date.getFullYear();
 
 export const getProjects = async () => {
 	const query = gql`
@@ -33,14 +38,17 @@ export const getProjects = async () => {
 
 export async function getStaticProps() {
 	const projects = (await getProjects()) || [];
+	const posts = (await getPosts()) || [];
 	return {
 		props: {
 			projects,
+			posts,
 		},
 	};
 }
-export default function Home({ projects }) {
-	console.log(projects);
+
+export default function Home({ projects, posts }) {
+	console.log(posts);
 	return (
 		<div>
 			<Head>
@@ -96,7 +104,33 @@ export default function Home({ projects }) {
 			</section>
 			<ServicesSection />
 			<ReviewsSection />
-			<BlogsSection />
+			<section className={classes2.blogSection}>
+				<div className={classes2.header}>
+					<h1 className="sectionTitle">
+						Our Latest <br />
+						Blogs
+					</h1>
+					<button className={`circleBtn ${classes2.blogBtn}`}>
+						View All Blogs
+					</button>
+				</div>
+				<div className={classes2.container}>
+					<Blog
+						img={posts[1].node.featuredImage.url}
+						date={posts[1].node.time}
+						year={year}
+						description={posts[1].node.overview}
+						link={posts[1].node.slug}
+					/>
+					<Blog
+						img={posts[2].node.featuredImage.url}
+						date={posts[2].node.time}
+						year={year}
+						description={posts[2].node.overview}
+						link={posts[1].node.slug}
+					/>
+				</div>
+			</section>
 			<Footer />
 		</div>
 	);

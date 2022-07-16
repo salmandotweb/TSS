@@ -34,6 +34,8 @@ export const getPosts = async () => {
 							url
 						}
 						id
+						overview
+						time
 					}
 				}
 			}

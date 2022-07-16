@@ -1,5 +1,6 @@
 .blogSection {
-	padding: 5rem 0rem 5rem 15rem;
+	padding: 5rem 0rem 15rem 15rem;
+	overflow: hidden;
 }
 .header {
 	display: flex;
@@ -13,23 +14,44 @@
 }
 .container {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
-	padding-top: 5rem;
+	padding-top: 10rem;
+}
+.circle {
+	height: 35vw;
+	width: 35vw;
+	border-radius: 50%;
+	border: 0.1rem solid #a8a8a8;
+	position: absolute;
+	z-index: -1;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
 }
 .blogCard {
 	width: 45vw;
 	cursor: pointer;
 	position: relative;
+	transition: all 250ms ease-in-out;
+}
+.blogCard:hover {
+	transform: scale(1.05);
+}
+.blogCard:hover .circle {
+	display: block;
 }
 .blogCard:not(:last-child) {
 	margin-right: 5rem;
 }
 .imageContainer {
 	width: 100%;
+	height: 50rem;
 }
 .imageContainer > img {
 	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -60,9 +82,37 @@
 	height: 10rem;
 	width: 10rem;
 }
+@media screen and (max-width: 1174px) {
+	.circle {
+		height: 35vw;
+		width: 35vw;
+		border-radius: 50%;
+		border: 0.1rem solid #a8a8a8;
+		position: absolute;
+		z-index: -1;
+		top: 44%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: none;
+	}
+}
 @media screen and (max-width: 1168px) {
 	.blogSection {
 		padding: 5rem 0rem 5rem 5rem;
+	}
+}
+@media screen and (max-width: 978px) {
+	.circle {
+		height: 36vw;
+		width: 36vw;
+		border-radius: 50%;
+		border: 0.1rem solid #a8a8a8;
+		position: absolute;
+		z-index: -1;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: none;
 	}
 }
 @media screen and (max-width: 948px) {
