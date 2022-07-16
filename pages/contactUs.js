@@ -42,7 +42,7 @@ const contactUs = () => {
 							<AiOutlineTwitter />
 							<FaFacebookF />
 						</div>
-						<p>enquiries@thesitespace.com</p>
+						<p>info@thesitespace.com</p>
 					</div>
 					<h2>London</h2>
 					<p>Unit 208</p>
@@ -78,6 +78,11 @@ const contactUs = () => {
 							placeholder="Type your message"
 							className={classes.input}
 						/>
+						<div className={classes.submitBtnContainer}>
+							<button className={`circleBtn ${classes.submitBtn}`}>
+								Submit
+							</button>
+						</div>
 					</form>
 				</div>
 			</section>

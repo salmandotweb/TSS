@@ -49,24 +49,6 @@
 .right > img {
 	width: 100%;
 }
-.visitBtn {
-	color: var(--2e2);
-	font-weight: 600;
-	border-color: var(--2e2);
-	position: relative;
-	margin-top: 5rem;
-}
-.visitBtn::after {
-	content: "";
-	position: absolute;
-	top: 0rem;
-	left: -0.6rem;
-	height: 12rem;
-	width: 12rem;
-	border-radius: 50%;
-	border: 0.1rem solid var(--2e2);
-	z-index: -1;
-}
 .showcase {
 	display: flex;
 	align-items: center;

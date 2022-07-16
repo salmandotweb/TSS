@@ -98,9 +98,7 @@ const SingleProject = ({ project }) => {
 					</div>
 					<div className={classes.right}>
 						<img src={project.image.url} alt={project.title} />
-						<button className={`circleBtn ${classes.visitBtn}`}>
-							Visit Website
-						</button>
+						<button className={`circleBtn visitBtn`}>Visit Website</button>
 					</div>
 				</div>
 				<div className={classes.showcase}>
