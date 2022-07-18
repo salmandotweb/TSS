@@ -17,6 +17,9 @@ function MyApp({ Component, pageProps }) {
 		let posY = posY1.current;
 		let mouseX = mouseX1.current;
 		let mouseY = mouseY1.current;
+
+		let customCursor = document.querySelector(".custom-cursor");
+
 		tl.to({}, 0.016, {
 			repeat: -1,
 			onRepeat: function () {
@@ -42,13 +45,33 @@ function MyApp({ Component, pageProps }) {
 			},
 			"-=1"
 		);
+		document.querySelectorAll(".circleBtn").forEach((btn) => {
+			btn.addEventListener(
+				"mouseenter",
+				function () {
+					tl2.to(cursor, { duration: 0.2, opacity: 0 });
+					btn.classList.add("hover");
+				},
+				false
+			);
+		});
+		document.querySelectorAll(".circleBtn").forEach((btn) => {
+			btn.addEventListener(
+				"mouseleave",
+				function () {
+					tl2.to(cursor, { duration: 0, opacity: 1 });
+					btn.classList.remove("hover");
+				},
+				false
+			);
+		});
 	});
 	return (
 		<>
-			<div className="cursor-follower" ref={(el) => (cursor = el)}>
+			<div className="custom-cursor" ref={(e) => (cursor = e)}>
 				Start your project
 			</div>
-			<Component {...pageProps} ref={(el) => (cursor = el)} />
+			<Component {...pageProps} />
 		</>
 	);
 }

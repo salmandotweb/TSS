@@ -125,6 +125,7 @@ a {
 	color: var(--white);
 	font-size: 1.6rem;
 	cursor: pointer;
+	transition: 250ms all;
 }
 
 .visitBtn {
@@ -340,7 +341,7 @@ input::placeholder {
 	}
 }
 
-.cursor-follower {
+.custom-cursor {
 	position: absolute;
 	z-index: 1500;
 	user-select: none;
@@ -361,7 +362,7 @@ input::placeholder {
 	justify-content: center;
 	white-space: break-spaces;
 }
-.cursor-follower::before {
+.custom-cursor::before {
 	content: "";
 	position: absolute;
 	top: 0.2rem;
@@ -371,4 +372,9 @@ input::placeholder {
 	border-radius: 50%;
 	border: 0.1rem solid var(--2e2);
 	z-index: -1;
+}
+@media screen and (max-width: 768px) {
+	.custom-cursor {
+		display: none;
+	}
 }
