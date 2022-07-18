@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "../styles/ServicesSection.module.css";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 const Service = ({ title, subTitle }) => (
 	<div className={classes.service}>
@@ -7,7 +9,6 @@ const Service = ({ title, subTitle }) => (
 		<p>{subTitle}</p>
 	</div>
 );
-
 const ServicesSection = () => {
 	return (
 		<section className={classes.servicesSection}>

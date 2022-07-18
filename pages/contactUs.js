@@ -42,7 +42,7 @@ const contactUs = () => {
 							<AiOutlineTwitter />
 							<FaFacebookF />
 						</div>
-						<p>info@thesitespace.com</p>
+						<a href="mailto:info@thesitespace.com">info@thesitespace.com</a>
 					</div>
 					<h2>London</h2>
 					<p>Unit 208</p>
