@@ -49,7 +49,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ projects, posts }) {
-	console.log(posts);
 	return (
 		<div>
 			<Head>

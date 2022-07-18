@@ -339,3 +339,36 @@ input::placeholder {
 		font-size: 2rem !important;
 	}
 }
+
+.cursor-follower {
+	position: absolute;
+	z-index: 1500;
+	user-select: none;
+	opacity: 1;
+	mix-blend-mode: multiply;
+	pointer-events: none;
+	transform: translate(0px, 0px);
+	border: 0.1rem solid var(--2e2);
+	color: var(--2e2);
+	font-weight: 600;
+	/* margin-top: 5rem; */
+	border-radius: 50%;
+	height: 14rem;
+	width: 14rem;
+	background: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: break-spaces;
+}
+.cursor-follower::before {
+	content: "";
+	position: absolute;
+	top: 0.2rem;
+	left: -0.6rem;
+	height: 14rem;
+	width: 14rem;
+	border-radius: 50%;
+	border: 0.1rem solid var(--2e2);
+	z-index: -1;
+}
