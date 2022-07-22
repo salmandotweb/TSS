@@ -1,0 +1,27 @@
+.circleBtn {
+	border: none;
+	border-radius: 50%;
+	height: 14rem;
+	width: 14rem;
+	background: none;
+	border: 0.15rem solid var(--2e2);
+	color: var(--2e2);
+	font-size: 2rem;
+	line-height: 1.3;
+	cursor: pointer;
+	transition: 250ms all;
+	padding: 1rem;
+	position: relative;
+}
+
+.circleBtn:hover::after {
+	content: "";
+	position: absolute;
+	top: -0.6rem;
+	left: -0rem;
+	height: 14rem;
+	width: 14rem;
+	border-radius: 50%;
+	border: 0.15rem solid var(--2e2);
+	z-index: -1;
+}

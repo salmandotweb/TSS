@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 3rem 5rem;
+	padding: 3rem 10rem;
 }
 .socialLinks {
 	display: flex;
@@ -21,7 +21,7 @@
 	transition: 250ms all;
 }
 .link:not(:last-child) {
-	margin-right: 1rem;
+	margin-right: 2rem;
 }
 .link:hover {
 	background: var(--ec4);
@@ -40,7 +40,7 @@
 	cursor: pointer;
 }
 .logo > img {
-	width: 17rem;
+	width: 18rem;
 }
 .right {
 	display: flex;
@@ -56,7 +56,7 @@
 	cursor: pointer;
 }
 .menu > svg {
-	font-size: 3rem;
+	font-size: 3.5rem;
 }
 @media screen and (max-width: 768px) {
 	.socialLinks {
@@ -81,10 +81,10 @@
 	overflow-x: hidden;
 	height: 100%;
 	width: 100%;
-	z-index: 9999999999999999;
+	z-index: 99999999999999999999;
 	background: var(--2e2);
 	color: var(--white);
-	animation: animate1 250ms ease-in-out;
+	animation: animate1 250ms;
 }
 .menuWrapper::-webkit-scrollbar {
 	width: 0rem;

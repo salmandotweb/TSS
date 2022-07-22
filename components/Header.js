@@ -19,20 +19,22 @@ const Header = ({
 				<span>{bgText2}</span>
 			</div>
 			<div className={classes.content}>
-				<h1>
-					{text1}&nbsp;
-					<span className={classes.gradient}>
-						{gradient1}
-						<br />
-						{gradient2}
-					</span>
-					{space}
-					{text2}
-				</h1>
-				<p>
-					{description}&nbsp;
-					<span className="bold">{bold}&nbsp;</span>
-				</p>
+				<div>
+					<h1>
+						{text1}&nbsp;
+						<span className={classes.gradient}>
+							{gradient1}
+							<br />
+							{gradient2}
+						</span>
+						{space}
+						{text2}
+					</h1>
+					<p>
+						{description}&nbsp;
+						<span className="bold">{bold}&nbsp;</span>
+					</p>
+				</div>
 			</div>
 			<div className={classes.arrow}>
 				<div className={classes.container}>

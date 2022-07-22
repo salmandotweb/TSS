@@ -12,6 +12,7 @@ import { request, gql } from "graphql-request";
 import { getPosts } from "./blogs";
 import Blog from "../components/Blog";
 import Link from "next/link";
+import Button from "../components/button";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
@@ -111,9 +112,7 @@ export default function Home({ projects, posts }) {
 						Blogs
 					</h1>
 					<Link href="/blogs">
-						<button className={`circleBtn ${classes2.blogBtn}`}>
-							View All Blogs
-						</button>
+						<Button>View All Blogs</Button>
 					</Link>
 				</div>
 				<div className={classes2.container}>
