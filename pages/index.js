@@ -12,7 +12,7 @@ import { request, gql } from "graphql-request";
 import { getPosts } from "./blogs";
 import Blog from "../components/Blog";
 import Link from "next/link";
-import Button from "../components/button";
+import Button from "../components/Button";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
