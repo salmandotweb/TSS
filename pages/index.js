@@ -11,7 +11,6 @@ import classes2 from "../styles/BlogsSection.module.css";
 import { request, gql } from "graphql-request";
 import { getPosts } from "./blogs";
 import Blog from "../components/Blog";
-import Link from "next/link";
 import Button from "../components/Button";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
@@ -111,9 +110,7 @@ export default function Home({ projects, posts }) {
 						Our Latest <br />
 						Blogs
 					</h1>
-					<Link href="/blogs">
-						<Button>View All Blogs</Button>
-					</Link>
+					<Button href="blogs">View All Blogs</Button>
 				</div>
 				<div className={classes2.container}>
 					<Blog

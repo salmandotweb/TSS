@@ -18,7 +18,7 @@
 	margin-top: 4rem;
 }
 .carousel {
-	flex: 0.5;
+	flex: 0.4;
 	width: 100%;
 	overflow: hidden;
 	border: 0.1rem solid var(--d1c);

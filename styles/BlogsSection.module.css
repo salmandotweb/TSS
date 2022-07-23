@@ -19,17 +19,43 @@
 	padding-top: 10rem;
 }
 .circle {
-	height: 35vw;
-	width: 35vw;
-	border-radius: 50%;
-	border: 0.1rem solid #a8a8a8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
 	position: absolute;
-	z-index: -1;
-	top: 48%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	display: none;
+	z-index: -1;
 }
+
+.circle__item {
+	width: 80rem;
+	height: 80rem;
+}
+
+.circle__spinner {
+	width: 80rem;
+	height: 80rem;
+}
+.circle__spinner .path {
+	stroke: #2e2e2e;
+	stroke-linecap: round;
+	animation: dash 1s linear;
+}
+
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1, 150;
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dasharray: 130, 150;
+		stroke-dashoffset: 0;
+	}
+}
+
 .blogCard {
 	width: 45vw;
 	cursor: pointer;
