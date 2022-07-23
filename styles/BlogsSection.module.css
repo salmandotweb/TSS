@@ -1,5 +1,5 @@
 .blogSection {
-	padding: 5rem 0rem 15rem 15rem;
+	padding: 5rem 0rem 25rem 15rem;
 	overflow: hidden;
 }
 .header {
@@ -14,8 +14,8 @@
 }
 .container {
 	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
+	align-items: flex-end;
+	justify-content: flex-end;
 	padding-top: 10rem;
 }
 .circle {
@@ -47,7 +47,7 @@
 }
 .imageContainer {
 	width: 100%;
-	height: 50rem;
+	height: 45rem;
 }
 .imageContainer > img {
 	width: 100%;
@@ -81,6 +81,12 @@
 .blogBtn {
 	height: 10rem;
 	width: 10rem;
+}
+.description {
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
 }
 @media screen and (max-width: 1174px) {
 	.circle {

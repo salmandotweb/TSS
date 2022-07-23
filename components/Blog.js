@@ -15,7 +15,7 @@ const Blog = ({ img, date, year, description, link }) => {
 						<h2>{date}</h2>
 						<p>{year}</p>
 					</div>
-					<p>{description}</p>
+					<p className={classes.description}>{description}</p>
 				</div>
 			</div>
 		</Link>

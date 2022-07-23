@@ -7,7 +7,9 @@ const AboutSection = () => {
 			<div className={classes.left}>
 				<div className={classes.content}>
 					<p>A Full-Stack</p>
-					<h1>Web Design, digital marketing and app development agency</h1>
+					<h1>
+						Web Design, digital marketing and app development agency in London.
+					</h1>
 					<p>
 						We are a London based web design agency. A small team with big
 						ideas. We specialise in bespoke web designing. From brochure
