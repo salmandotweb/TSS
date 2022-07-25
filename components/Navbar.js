@@ -57,7 +57,7 @@ const Navbar = () => {
 		setBlogs(false);
 		setAbout(false);
 		setContact(false);
-		setServices(!services);
+		setServices(true);
 	};
 	const handleBlogs = () => {
 		setHome(false);
@@ -164,7 +164,7 @@ const Navbar = () => {
 								</h1>
 							</Link>
 							<h1
-								onClick={handleServices}
+								onMouseEnter={handleServices}
 								className={services ? classes.bold : classes.normal}>
 								Services
 							</h1>
