@@ -12,6 +12,7 @@ import { request, gql } from "graphql-request";
 import { getPosts } from "./blogs";
 import Blog from "../components/Blog";
 import Button from "../components/Button";
+import headerStyles from "../styles/Header.module.css";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
@@ -66,8 +67,11 @@ export default function Home({ projects, posts }) {
 				bgText2="Space"
 				description="Web Buds is a creative website design agency in London."
 				bold="A team of talented web designers in London."
-				space="&nbsp;"
-			/>
+				space="&nbsp;">
+				<div className={headerStyles.projectBtn}>
+					<Button>Start Your Project</Button>
+				</div>
+			</Header>
 			<AboutSection />
 			<section className={classes.workSection}>
 				<h1 className="sectionTitle">
