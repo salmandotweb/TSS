@@ -16,7 +16,7 @@ const Blog = ({ img, date, year, description, link }) => {
 								r="20"
 								fill="none"
 								stroke="#2e2e2e"
-								strokeWidth=".2"></circle>
+								strokeWidth=".1"></circle>
 						</svg>
 					</div>
 				</div>

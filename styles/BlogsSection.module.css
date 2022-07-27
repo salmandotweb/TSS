@@ -6,7 +6,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-right: 15rem;
+	padding-right: 30rem;
+	padding-left: 6rem;
+}
+.header > h1 {
+	font-size: 9rem;
 }
 .header > button {
 	color: var(--2e2);
@@ -31,17 +35,17 @@
 }
 
 .circle__item {
-	width: 80rem;
-	height: 80rem;
+	width: 85rem;
+	height: 85rem;
 }
 
 .circle__spinner {
-	width: 80rem;
-	height: 80rem;
+	width: 85rem;
+	height: 85rem;
 	transform: rotate(-180deg);
 }
 .circle__spinner .path {
-	stroke: #2e2e2e;
+	stroke: #aaa;
 	stroke-linecap: round;
 	animation: dash 1s linear;
 }
@@ -67,7 +71,7 @@
 }
 
 .blogCard {
-	width: 45vw;
+	width: 82rem;
 	cursor: pointer;
 	position: relative;
 	transition: all 250ms ease-in-out;
@@ -99,6 +103,7 @@
 	justify-content: space-between;
 	width: 100%;
 	padding: 0.5rem;
+	margin-top: 0.5rem;
 }
 .details > div {
 	display: flex;
@@ -123,6 +128,53 @@
 	-webkit-line-clamp: 2;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
+	width: 70%;
+}
+@media screen and (max-width: 1440px) {
+	.header {
+		padding-right: 20rem;
+		padding-left: 0rem;
+	}
+	.blogCard {
+		width: 65rem;
+	}
+	.circle__item {
+		width: 70rem;
+		height: 70rem;
+	}
+	.circle__spinner {
+		width: 70rem;
+		height: 70rem;
+		transform: rotate(-180deg);
+	}
+}
+@media screen and (max-width: 1222px) {
+	.blogSection {
+		padding: 5rem 0rem 15rem 15rem;
+	}
+	.container {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.blogCard:not(:last-child) {
+		margin-bottom: 5rem;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.blogSection {
+		padding: 5rem 15rem 25rem 15rem;
+	}
+	.container {
+		width: 100%;
+	}
+	.header {
+		padding-right: 10rem;
+		padding-left: 0rem;
+	}
+	.blogCard {
+		width: 100%;
+	}
 }
 @media screen and (max-width: 1174px) {
 	.circle {
@@ -140,7 +192,7 @@
 }
 @media screen and (max-width: 1168px) {
 	.blogSection {
-		padding: 5rem 0rem 5rem 5rem;
+		padding: 5rem 5rem 5rem 5rem;
 	}
 }
 @media screen and (max-width: 978px) {
@@ -208,5 +260,8 @@
 	}
 	.container {
 		padding-top: 3rem;
+	}
+	.description {
+		width: 100%;
 	}
 }

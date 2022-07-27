@@ -14,13 +14,13 @@
 }
 .content > p:first-child {
 	text-transform: uppercase;
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	font-weight: 600;
 	margin-bottom: 2rem;
 }
 .content > h1 {
 	line-height: 1.1;
-	font-size: 6rem;
+	font-size: 6.5rem;
 }
 .content > p:last-child {
 	padding-top: 5rem;
