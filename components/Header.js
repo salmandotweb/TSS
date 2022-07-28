@@ -22,6 +22,11 @@ const Header = ({
 			<div className={classes.content}>
 				<div>
 					<h1>
+						<img
+							className={classes.redIcon}
+							src="/assets/red-icon.svg"
+							alt=""
+						/>
 						{text1}&nbsp;
 						<span className={classes.gradient}>
 							{gradient1}

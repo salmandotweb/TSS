@@ -22,14 +22,14 @@
 	margin-bottom: 5rem;
 }
 .imageContainer {
-	flex: 0.53;
+	flex: 0.54;
 	width: 100%;
 }
 .imageContainer > img {
 	width: 100%;
 }
 .info {
-	flex: 0.42;
+	flex: 0.46;
 	margin-left: 10rem;
 }
 .info > p {

@@ -1,7 +1,7 @@
 .footer {
 	background: var(--2e2);
 	color: var(--white);
-	padding: 5rem 5rem 2rem 15rem;
+	padding: 15rem 5rem 2rem 20rem;
 }
 .footer p {
 	color: #787878;
@@ -59,7 +59,7 @@
 .about {
 	margin: 1rem 0;
 	font-size: 1.7rem;
-	width: 35rem;
+	width: 26rem;
 }
 .middle {
 	flex: 0.38;
@@ -70,6 +70,10 @@
 }
 .form > input:not(:last-child) {
 	margin-bottom: 3rem;
+}
+.form > input {
+	font-size: 1.4rem;
+	font-weight: 400;
 }
 .submitBtn {
 	display: flex;
@@ -88,7 +92,7 @@
 	flex: 0.28;
 }
 .right > h2 {
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 .right > p {
 	font-size: 2.2rem;

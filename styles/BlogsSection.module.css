@@ -1,5 +1,5 @@
 .blogSection {
-	padding: 5rem 0rem 25rem 15rem;
+	padding: 5rem 0rem 15rem 15rem;
 	overflow: hidden;
 }
 .header {
@@ -128,7 +128,7 @@
 	-webkit-line-clamp: 2;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	width: 70%;
+	width: 60%;
 }
 @media screen and (max-width: 1440px) {
 	.header {

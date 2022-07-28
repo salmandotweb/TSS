@@ -57,6 +57,7 @@
 }
 .menu > svg {
 	font-size: 3.5rem;
+	margin-left: 1rem;
 }
 @media screen and (max-width: 768px) {
 	.socialLinks {
@@ -158,7 +159,7 @@
 	justify-content: flex-start;
 }
 .subLinks > p {
-	font-size: 2.1rem;
+	font-size: 2.4rem;
 	font-weight: 400;
 	cursor: pointer;
 	transition: 200ms all;

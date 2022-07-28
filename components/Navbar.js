@@ -83,6 +83,9 @@ const Navbar = () => {
 		setBlogs(false);
 		setShow(false);
 	};
+	const handleMouseLeave = () => {
+		setServices(false);
+	};
 	return (
 		<nav className={classes.navbar}>
 			<div className={classes.socialLinks}>
@@ -159,6 +162,7 @@ const Navbar = () => {
 							<Link href="/">
 								<h1
 									onClick={handleHome}
+									onMouseEnter={handleMouseLeave}
 									className={home ? classes.bold : classes.normal}>
 									Home
 								</h1>
@@ -183,6 +187,7 @@ const Navbar = () => {
 							<Link href="/blogs">
 								<h1
 									onClick={handleBlogs}
+									onMouseEnter={handleMouseLeave}
 									className={blogs ? classes.bold : classes.normal}>
 									Blogs
 								</h1>
@@ -190,6 +195,7 @@ const Navbar = () => {
 							<Link href="/aboutUs">
 								<h1
 									onClick={handleAbout}
+									onMouseEnter={handleMouseLeave}
 									className={about ? classes.bold : classes.normal}>
 									About Us
 								</h1>
@@ -197,6 +203,7 @@ const Navbar = () => {
 							<Link href="/contactUs">
 								<h1
 									onClick={handleContact}
+									onMouseEnter={handleMouseLeave}
 									className={contact ? classes.bold : classes.normal}>
 									Contact Us
 								</h1>
